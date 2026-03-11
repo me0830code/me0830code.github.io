@@ -33,4 +33,16 @@ export type Project = {
         ],
         featured: true,
       },
+      {
+        slug: "",
+        title: "Project3",
+        description: "Des3",
+        tags: ["Skill1", "Skill2"],
+        timeframe: "2026",
+        links: [
+          { label: "Demo", href: "#" },
+          { label: "Doc", href: "#" },
+        ],
+        featured: true,
+      },
   ];
