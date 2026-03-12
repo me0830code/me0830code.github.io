@@ -7,18 +7,18 @@ export function Navbar() {
     ];
   
     return (
-      <header className="border-b">
-        <div className="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between gap-4">
+      <header className="w-full border-b bg-white">
+        <div className="mx-auto max-w-5xl px-4 py-4 flex items-center gap-6">
           <a href="#" className="font-semibold tracking-tight">
             Kevin Yeh
           </a>
   
-          <nav className="flex flex-wrap items-center gap-3 text-sm">
+          <nav className="flex-1 grid grid-cols-4 gap-2">
             {items.map((it) => (
               <a
                 key={it.href}
                 href={it.href}
-                className="rounded-full px-3 py-1 hover:bg-black/5 transition"
+                className="text-center rounded-xl px-3 py-2 text-sm hover:bg-black/5 transition"
               >
                 {it.label}
               </a>

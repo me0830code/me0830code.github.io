@@ -13,14 +13,16 @@ export default function App() {
           <p className="text-sm uppercase tracking-wider opacity-70">
             Software Engineer • Backend • Data Products
           </p>
+
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
             Hi, I’m Kevin
           </h1>
+
           <p className="text-lg opacity-80 leading-relaxed max-w-2xl">
             This is me.
           </p>
 
-          <div className="flex flex-wrap gap3 pt-2">
+          <div className="flex flex-wrap gap-3 pt-2">
             <Button href="#projects" variant="solid"> Side Projects</Button>
             <Button href="#contact" variant="solid"> Contact Info</Button>
           </div>
