@@ -1,19 +1,78 @@
+import { Navbar } from "./components/Navibar";
 import { ProjectsSection } from "./sections/ProjectsSection";
 import { ExperienceSection } from "./sections/ExperienceSection";
 
 export default function App() {
   return (
     <div className="min-h-screen">
-      <main className="mx-auto max-w-5xl px-4 py-10 space-y-16">
-        <header>
-          <h1 className="text-3xl font-bold">Kevin Yeh</h1>
-          <p className="mt-2 text-lg opacity-80">
-            Hello world!
-          </p>
-        </header>
+      <Navbar />
 
-        <ProjectsSection />
-        <ExperienceSection />
+      <main className="mx-auto max-w-5xl px-4 py-10 space-y-16">
+        <section className="space-y-4">
+          <p className="text-sm uppercase tracking-wider opacity-70">
+            Software Engineer • Backend • Data Products
+          </p>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+            Hi, I’m Kevin
+          </h1>
+          <p className="text-lg opacity-80 leading-relaxed max-w-2xl">
+            This is me.
+          </p>
+
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href="#projects"
+              className="rounded-xl border px-4 py-2 text-sm hover:bg-black/5 transition"
+            >
+              View Projects
+            </a>
+            <a
+              href="#contact"
+              className="rounded-xl bg-black text-white px-4 py-2 text-sm hover:opacity-90 transition"
+            >
+              Contact
+            </a>
+          </div>
+        </section>
+
+        <section id="about" className="scroll-mt-24 space-y-3">
+          <h2 className="text-2xl font-semibold">About</h2>
+          <p className="opacity-80 leading-relaxed max-w-3xl">
+            I'm Kevin, this is my testing protfolio.
+          </p>
+        </section>
+
+        <section id="projects" className="scroll-mt-24">
+          <ProjectsSection />
+        </section>
+
+        <section id="experience" className="scroll-mt-24">
+          <ExperienceSection />
+        </section>
+
+        <section id="contact" className="scroll-mt-24 space-y-3">
+          <h2 className="text-2xl font-semibold">Contact</h2>
+          <p className="opacity-80">
+            Reach me at{" "}
+            <a className="underline" href="mailto:you@example.com">
+              me0830code@gmail.com
+            </a>
+            .
+          </p>
+
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a className="underline" href="https://github.com/me0830code" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a className="underline" href="#" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </section>
+
+        <footer className="pt-6 pb-2 text-sm opacity-60">
+          © {new Date().getFullYear()} me0830code
+        </footer>
       </main>
     </div>
   );
