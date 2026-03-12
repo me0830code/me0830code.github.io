@@ -1,4 +1,5 @@
 import { Navbar } from "./components/Navibar";
+import { Button } from "./components/Button";
 import { ProjectsSection } from "./sections/ProjectsSection";
 import { ExperienceSection } from "./sections/ExperienceSection";
 
@@ -19,19 +20,9 @@ export default function App() {
             This is me.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2">
-            <a
-              href="#projects"
-              className="rounded-xl border px-4 py-2 text-sm hover:bg-black/5 transition"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="rounded-xl bg-black text-white px-4 py-2 text-sm hover:opacity-90 transition"
-            >
-              Contact
-            </a>
+          <div className="flex flex-wrap gap3 pt-2">
+            <Button href="#projects" variant="solid"> Side Projects</Button>
+            <Button href="#contact" variant="solid"> Contact Info</Button>
           </div>
         </section>
 
