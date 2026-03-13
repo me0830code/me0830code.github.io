@@ -22,7 +22,7 @@ export type Project = {
         { label: "Demo", href: "#" },
         { label: "Doc", href: "#" },
       ],
-      cover: "covers/banana.png",
+      cover: "projectPreview/test.png",
       featured: true,
     },
     {
@@ -32,7 +32,7 @@ export type Project = {
         tags: ["Skill1"],
         timeframe: "2026",
         status: "Shipped",
-        cover: "covers/banana.png",
+        cover: "projectPreview/test.png",
         links: [
           { label: "Demo", href: "#" },
           { label: "Doc", href: "#" },
@@ -46,7 +46,7 @@ export type Project = {
         tags: ["Skill2"],
         timeframe: "2026",
         status: "WIP",
-        cover: "covers/banana.png",
+        cover: "projectPreview/test.png",
         links: [
           { label: "Demo", href: "#" },
           { label: "Doc", href: "#" },
