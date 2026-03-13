@@ -4,7 +4,9 @@ export type Project = {
     description: string;
     tags: string[];
     timeframe?: string;
+    status?: "WIP" | "Demo" | "Shipped";
     links: { label: "GitHub" | "Demo" | "Doc"; href: string }[];
+    cover?: string;
     featured?: boolean;
   };
   
@@ -15,18 +17,22 @@ export type Project = {
       description: "Des1",
       tags: ["Skill1", "Skill2"],
       timeframe: "2026",
+      status: "Demo",
       links: [
         { label: "Demo", href: "#" },
         { label: "Doc", href: "#" },
       ],
+      cover: "covers/banana.png",
       featured: true,
     },
     {
         slug: "",
         title: "Project2",
         description: "Des2",
-        tags: ["Skill1", "Skill2"],
+        tags: ["Skill1"],
         timeframe: "2026",
+        status: "Shipped",
+        cover: "covers/banana.png",
         links: [
           { label: "Demo", href: "#" },
           { label: "Doc", href: "#" },
@@ -37,8 +43,10 @@ export type Project = {
         slug: "",
         title: "Project3",
         description: "Des3",
-        tags: ["Skill1", "Skill2"],
+        tags: ["Skill2"],
         timeframe: "2026",
+        status: "WIP",
+        cover: "covers/banana.png",
         links: [
           { label: "Demo", href: "#" },
           { label: "Doc", href: "#" },
