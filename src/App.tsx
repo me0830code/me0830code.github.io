@@ -9,12 +9,21 @@ import { ExperienceSection } from "./sections/ExperienceSection";
 
 function AboutSection() {
   return (
+    <div>
     <section className="rounded-2xl border bg-zinc-900 p-6">
-      <h1 className="text-2xl font-semibold">About</h1>
+      <h1 className="text-2xl font-semibold">About me...</h1>
       <p className="mt-3 opacity-80">
         Hello world!
       </p>
     </section>
+
+    <section className="rounded-2xl border bg-zinc-900 p-6 mt-10">
+      <h1 className="text-2xl font-semibold">What I'm doing?</h1>
+      <p className="mt-3 opacity-80">
+        Hello world!
+      </p>
+    </section>
+    </div>
   );
 }
 
