@@ -12,7 +12,7 @@ function AboutSection() {
     <section className="rounded-2xl border bg-zinc-900 p-6">
       <h1 className="text-2xl font-semibold">About</h1>
       <p className="mt-3 opacity-80">
-        Write a short intro here. (Version 1 placeholder is OK.)
+        Hello world!
       </p>
     </section>
   );
@@ -22,7 +22,7 @@ function ContactSection() {
   return (
     <section className="rounded-2xl border bg-zinc-900 p-6">
       <h1 className="text-2xl font-semibold">Contact</h1>
-      <p className="mt-3 opacity-80">you@example.com</p>
+      <p className="mt-3 opacity-80">me0830code@gmail.com</p>
     </section>
   );
 }
@@ -34,9 +34,9 @@ export default function App() {
     switch (active) {
       case CONTENT_SECTION.AboutMe.key:
         return <AboutSection />;
-      case CONTENT_SECTION.WorkExperience.key:
-        return <ProjectsSection />;
       case CONTENT_SECTION.SideProject.key:
+        return <ProjectsSection />;
+      case CONTENT_SECTION.WorkExperience.key:
         return <ExperienceSection />;
       case CONTENT_SECTION.ContactInfo.key:
         return <ContactSection />;
