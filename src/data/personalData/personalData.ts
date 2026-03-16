@@ -8,6 +8,7 @@ export const PERSONAL_INFO = {
 } as const;
 
 export const CONTACT_INFO = {
+  PHONE: "+(886) 937532865",
   EMAIL: "me0830code@gmail.com",
   GITHUB: "GitHub",
   LINKEDIN: "LinkedIn"

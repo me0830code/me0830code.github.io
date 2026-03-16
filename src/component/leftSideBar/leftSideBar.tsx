@@ -4,7 +4,7 @@ import { LINKS } from "../../data/constant/generalLink";
 import { ProfilePhoto } from "./ProfilePhoto";
 import { ProfileInfo } from "./ProfileInfo";
 import { ContactInfo } from "./ContactInfo";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, PhoneIcon } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 export function Sidebar({
@@ -19,21 +19,25 @@ export function Sidebar({
         <ProfilePhoto/>
         <ProfileInfo/>
         <ContactInfo
+         location={{
+            label: "Taiwan",
+            icon: <PhoneIcon size={20} strokeWidth={1.75} />,
+          }} 
   items={[
     {
       label: "Email",
       href: "mailto:you@example.com",
-      icon: <HiOutlineMail size={20} />,
+      icon: <Mail size={20} strokeWidth={1.75} />,
     },
     {
       label: "GitHub",
       href: "https://github.com/yourname",
-      icon: <FaGithub size={18} />,
+      icon: <Github size={20} strokeWidth={1.75}/>,
     },
     {
       label: "LinkedIn",
       href: "https://linkedin.com/in/yourname",
-      icon: <FaLinkedinIn size={18} />,
+      icon: <Linkedin size={20} strokeWidth={1.75} />,
     },
   ]}
 />

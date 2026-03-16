@@ -8,12 +8,49 @@ export function ProfileInfo() {
             </h2>
             
             <p className="mt-3 text-base text-sky-600 font-semibold">
-                {PERSONAL_INFO.CURRENT_TITLE}
+                {PERSONAL_INFO.CURRENT_TITLE} at <a>123</a>
             </p>
-  
+            
+            <div>
+                <span className="mt-3 text-base text-sky-600 font-semibold">
+                    at
+                </span>
+
+                <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={PERSONAL_INFO.COMPANY}
+      title={PERSONAL_INFO.COMPANY}
+      className="inline-flex items-center transition hover:opacity-80"
+    >coupang
+      {/* <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/35/Coupang_logo.png"
+        alt={PERSONAL_INFO.COMPANY}
+        className="h-5 w-auto object-contain"
+      /> */}
+    </a>
+            </div>
+
+                {/* <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={PERSONAL_INFO.COMPANY}
+          title={PERSONAL_INFO.COMPANY}
+          className="inline-flex items-center transition hover:opacity-80"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/35/Coupang_logo.png"
+            alt={PERSONAL_INFO.COMPANY}
+            className="max-h-5 w-auto object-contain"
+          />
+          </a>
+            </p>
+   */}
             <p className="mt-3 max-w-xs text-sm leading-7 text-slate-600">
                 {PERSONAL_INFO.BRIEF_INTRO}
             </p>
         </div>
     );
-  }
+}
