@@ -24,7 +24,7 @@ type ContactItem = {
       </div>
 
   
-        <div className="mt-12 space-y-3">
+        <div className="mt-6 space-y-3">
           {items.map((item) =>
             item.href ? (
               <a
