@@ -17,11 +17,6 @@ export function ProfileInfo() {
       title={PERSONAL_INFO.COMPANY}
       className="inline-flex items-center transition hover:opacity-80 text-black font-semibold"
     >Coupang
-      {/* <img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/35/Coupang_logo.png"
-        alt={PERSONAL_INFO.COMPANY}
-        className="h-5 w-auto object-contain"
-      /> */}
     </a>
     </p>
             <p className="mt-3 max-w-xs text-sm leading-7 text-slate-600">

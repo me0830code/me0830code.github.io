@@ -18,10 +18,10 @@ type ContactItem = {
   export function ContactInfo({ location, items }: ContactInfoProps) {
     return (
       <div className="space-y-4 text-sm">
-      <div className="flex items-center gap-3 text-slate-600">
-        <span className="shrink-0 text-slate-500">{location.icon}</span>
-        <span>{location.label}</span>
-      </div>
+      {/* <div className="flex items-center gap-3 text-slate-600"> */}
+        {/* <span className="shrink-0 text-slate-500">{location.icon}</span> */}
+        {/* <span>{location.label}</span> */}
+      {/* </div> */}
 
   
         <div className="mt-6 space-y-3">
