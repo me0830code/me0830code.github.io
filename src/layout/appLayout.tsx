@@ -1,11 +1,11 @@
+import type { SectionKey } from "../data/constant/contentData";
+
 import { useState } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
 import { RightContent } from "../component/RightContent/RightContent";
-import type { SectionKey } from "../data/constant/contentData";
 import { CONTENT_SECTION } from "../data/constant/contentData";
 
 export function AppLayout() {
-
     const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
 
     return (
