@@ -1,4 +1,6 @@
 import { PERSONAL_INFO } from "../../data/personalData/personalData";
+import { COMPANY_INFO } from "../../data/experienceInfo/experienceInfo";
+import { CustomizedTextRendering } from "../Others/Helper";
 
 export function ProfileInfo() {
     return (
@@ -7,20 +9,16 @@ export function ProfileInfo() {
                 {PERSONAL_INFO.MY_NAME}
             </h2>
             
-            <p className="mt-3 text-base text-sky-600 font-semibold">
-                {PERSONAL_INFO.CURRENT_TITLE} at <></>
-                <a
-      href="https://www.google.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={PERSONAL_INFO.COMPANY}
-      title={PERSONAL_INFO.COMPANY}
-      className="inline-flex items-center transition hover:opacity-80 text-black font-semibold"
-    >Coupang
-    </a>
-    </p>
-            <p className="mt-3 max-w-xs text-sm leading-7 text-slate-600">
-                {PERSONAL_INFO.BRIEF_INTRO}
+            <p className="mt-4 text-base text-sky-600 font-semibold">
+                {PERSONAL_INFO.CURRENT_TITLE} at
+
+                <a href={COMPANY_INFO.Coupang.companyLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-1 -mx-2 rounded-md transition-all duration-200 hover:bg-red-50 group">
+                    <img src={COMPANY_INFO.Coupang.logoURL} alt={COMPANY_INFO.Coupang.companyName} className="h-[1.1em] w-auto object-contain transition-transform group-hover:scale-105 align-middle translate-y-[5px]"/>
+                </a>
+            </p>
+            
+            <p className="mt-3 max-w-xs text-sm leading-7">
+                {CustomizedTextRendering(PERSONAL_INFO.BRIEF_INTRO)}
             </p>
         </div>
     );

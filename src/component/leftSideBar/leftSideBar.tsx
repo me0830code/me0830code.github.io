@@ -4,9 +4,8 @@ import { LINKS } from "../../data/constant/generalLink";
 import { ProfilePhoto } from "./ProfilePhoto";
 import { ProfileInfo } from "./ProfileInfo";
 import { ContactInfo } from "./ContactInfo";
-import { Mail, Github, Linkedin, MapPin, PhoneIcon } from "lucide-react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { ViewMyResume } from "./ViewMyResume";
+
 export function Sidebar({
     active,
     onSelect,
@@ -15,32 +14,14 @@ export function Sidebar({
     onSelect: (key: SectionKey) => void;
   }) {
     return (
-      <aside className="border-r border-slate-200/80 pr-5">
+      <aside className="border-r border-slate-200/80 pr-8">
         <ProfilePhoto/>
         <ProfileInfo/>
-        <ContactInfo
-         location={{
-            label: "Taiwan",
-            icon: <PhoneIcon size={20} strokeWidth={1.75} />,
-          }} 
-  items={[
-    {
-      label: "Email",
-      href: "mailto:you@example.com",
-      icon: <Mail size={20} strokeWidth={1.75} />,
-    },
-    {
-      label: "GitHub",
-      href: "https://github.com/yourname",
-      icon: <Github size={20} strokeWidth={1.75}/>,
-    },
-    {
-      label: "LinkedIn",
-      href: "https://linkedin.com/in/yourname",
-      icon: <Linkedin size={20} strokeWidth={1.75} />,
-    },
-  ]}
-/>
+        <ContactInfo/>
+
+        <hr className="my-6 border-t-2 border-slate-200"/>
+        
+        <ViewMyResume/>
         <div className="sticky top-8">
           <div className="space-y-8">
             
@@ -64,17 +45,7 @@ export function Sidebar({
                 );
               })}
             </nav>
-  
-            <div className="pt-4">
-              <a
-                className="inline-flex items-center justify-center border border-slate-300 px-4 py-2 text-sm font-medium text-slate-800 transition hover:border-sky-300 hover:text-sky-600"
-                href={LINKS.RESUME}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Resume
-              </a>
-            </div>
+
           </div>
         </div>
       </aside>

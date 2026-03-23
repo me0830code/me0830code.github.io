@@ -1,54 +1,26 @@
-// import { PERSONAL_INFO } from "../../data/personalData/personalData";
-import { ArrowUpRight } from "lucide-react";
-import type { ReactNode } from "react";
-type ContactItem = {
-    label: string;
-    href?: string;
-    icon: ReactNode;
-  };
-  
-  type ContactInfoProps = {
-    location: {
-      label: string;
-      icon: ReactNode;
-    };
-    items: ContactItem[];
-  };
-  
-  export function ContactInfo({ location, items }: ContactInfoProps) {
-    return (
-      <div className="space-y-4 text-sm">
-      {/* <div className="flex items-center gap-3 text-slate-600"> */}
-        {/* <span className="shrink-0 text-slate-500">{location.icon}</span> */}
-        {/* <span>{location.label}</span> */}
-      {/* </div> */}
+import { TOTAL_INFO } from "../../data/personalData/personalData";
+import { Icon } from '@iconify/react';
 
-  
-        <div className="mt-6 space-y-3">
-          {items.map((item) =>
-            item.href ? (
-              <a
-                key={item.label}
-                href={item.href}
-                target="_blank"
-                title={item.label}
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-slate-600 transition hover:text-sky-600"
-              >
-                <span className="shrink-0 text-slate-500">{item.icon}</span>
-                <span>{item.label}</span>
-              </a>
-            ) : (
-              <div
-                key={item.label}
-                className="flex items-center gap-3 text-slate-600"
-              >
-                <span className="shrink-0 text-slate-500">{item.icon}</span>
-                <span>{item.label}</span>
-              </div>
-            )
-          )}
+export function ContactInfo() {
+    return (
+        <div className="mt-8 space-y-3">
+            {
+                TOTAL_INFO.map((eachInfo) =>
+                    !eachInfo.isLinkActive ? (
+                        <div key={eachInfo.key} className="mt-4 flex items-center gap-3 text-black">
+                            <Icon icon={eachInfo.iconURL} width={eachInfo.customSize} height={eachInfo.customSize}/>
+                            <span>{eachInfo.value}</span>
+                        </div>
+                    )
+                    :
+                    (
+                        <a key={eachInfo.key} href={eachInfo.linkURL} target="_blank" rel="noopener noreferrer"className="mt-4 flex items-center gap-3 text-black transition hover:text-sky-600">
+                            <Icon icon={eachInfo.iconURL} width={eachInfo.customSize} height={eachInfo.customSize}/>
+                            <span>{eachInfo.value}</span>
+                        </a>
+                    )
+                )
+            }
         </div>
-      </div>
     );
-  }
+}
