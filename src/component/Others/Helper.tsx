@@ -5,7 +5,7 @@ export const CustomizedTextRendering = (text: string) => {
     return parts.map((part, index) => {
         if (part.startsWith('**') && part.endsWith('**')) {
             return (
-                <strong key={index} className="font-bold text-red-500">
+                <strong key={index} className="font-bold text-pink-500">
                     {part.slice(2, -2)}
                 </strong>
             );

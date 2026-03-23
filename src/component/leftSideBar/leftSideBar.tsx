@@ -5,12 +5,12 @@ import { ContactInfo } from "./ContactInfo";
 import { NavigationBar } from "./NavigationBar";
 import { ViewMyResume } from "./ViewMyResume";
 
-export function Sidebar({
+export function LeftSideBar({
     active,
     onSelect,
   }: {
-    active: SectionKey;
-    onSelect: (key: SectionKey) => void;
+      active: SectionKey;
+      onSelect: (key: SectionKey) => void;
   }) {
     return (
       <aside className="border-r border-slate-200/80 pr-8">

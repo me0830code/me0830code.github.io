@@ -1,8 +1,7 @@
 export const CONTENT_SECTION = {
     AboutMe: { key: "aboutMe", sectionTitle: "About Me"},
     WorkExperience: { key: "workExperience", sectionTitle: "Work Experience"},
-    SideProject: { key: "sideProject", sectionTitle: "Selected Projects"},
-    ContactInfo: { key: "contactInfo", sectionTitle: "Contact Me"},
+    SideProject: { key: "sideProject", sectionTitle: "Selected Projects"}
 } as const;
 
 export type SectionKey = (typeof CONTENT_SECTION)[keyof typeof CONTENT_SECTION]["key"];
