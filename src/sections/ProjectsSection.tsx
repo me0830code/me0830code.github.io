@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { projects } from "../contents/project";
+import type { Project } from "../contents/project";
 
 export function ProjectsSection() {
   const [activeTag, setActiveTag] = useState("All");
@@ -51,9 +52,9 @@ export function ProjectsSection() {
             Featured
           </h3>
           <div className="grid gap-4 sm:grid-cols-2">
-            {featured.map((p) => (
-              <ProjectCard key={p.slug} p={p} />
-            ))}
+          {featured.map((p, index) => (
+            <ProjectCard key={`${p.slug}-${index}`} p={p} />
+          ))}
           </div>
         </div>
       )}
@@ -88,7 +89,7 @@ function StatusBadge({ status }: { status?: string }) {
   );
 }
 
-function ProjectCard({ p }: { p: any }) {
+function ProjectCard({ p }: { p: Project }) {
   return (
     <article className="rounded-2xl border p-5 hover:shadow-sm transition">
       <div className="flex items-start justify-between gap-3">
@@ -105,19 +106,28 @@ function ProjectCard({ p }: { p: any }) {
       <p className="mt-2 opacity-80">{p.description}</p>
 
       <div className="mt-3 flex flex-wrap gap-2">
-        {p.tags.map((t: string) => (
-          <span key={t} className="rounded-full border px-2 py-1 text-xs opacity-80">
-            {t}
-          </span>
-        ))}
+      {p.tags.map((t: string, index: number) => (
+        <span 
+          key={`${t}-${index}`} 
+          className="rounded-full border px-2 py-1 text-xs opacity-80"
+        >
+          {t}
+        </span>
+      ))}
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3 text-sm">
-        {p.links.map((l: any) => (
-          <a key={l.href} href={l.href} target="_blank" rel="noreferrer" className="underline">
-            {l.label}
-          </a>
-        ))}
+      {p.links.map((l: { label: string; href: string }, index: number) => (
+        <a 
+          key={`${l.href}-${index}`} 
+          href={l.href} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="underline"
+        >
+          {l.label}
+        </a>
+      ))}
       </div>
 
       {p.timeframe && <div className="mt-3 text-xs opacity-60">{p.timeframe}</div>}

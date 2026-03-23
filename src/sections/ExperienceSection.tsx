@@ -2,7 +2,7 @@ import { milestones } from "../contents/experience";
 
 export function ExperienceSection() {
   return (
-    <section id="experience">
+    <section>
       <h2 className="text-2xl font-semibold">Experience</h2>
 
       <div className="mt-6 space-y-6">

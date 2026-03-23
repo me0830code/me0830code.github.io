@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export function ContactInfo() {
     return (
-        <div className="mt-8 space-y-3">
+        <div className="mt-6 space-y-3">
             {
                 TOTAL_INFO.map((eachInfo) =>
                     !eachInfo.isLinkActive ? (

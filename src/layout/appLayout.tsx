@@ -1,6 +1,6 @@
 import type { SectionKey } from "../data/constant/contentData";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
 import { RightContent } from "../component/RightContent/RightContent";
 import { CONTENT_SECTION } from "../data/constant/contentData";
@@ -8,17 +8,54 @@ import { CONTENT_SECTION } from "../data/constant/contentData";
 export function AppLayout() {
     const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
 
+    const isManualScrolling = useRef(false);
+
+    const handleSelect = (key: SectionKey) => {
+        isManualScrolling.current = true;
+        setActive(key);
+        
+        const element = document.getElementById(key);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        setTimeout(() => {
+            isManualScrolling.current = false;
+        }, 1000); 
+    };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !isManualScrolling.current) {
+                        setActive(entry.target.id as SectionKey);
+                    }
+                });
+            },
+            { 
+                rootMargin: "0px 0px -80% 0px", 
+                threshold: 0
+            }
+        );
+    
+        const sections = document.querySelectorAll('section[id]');
+        sections.forEach((section) => observer.observe(section));
+    
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
-            <div className="ml-6 mx-auto px-8 py-8">
+            <div className="mx-auto px-8 py-8">
                 <div className="grid grid-cols-14 gap-12">
-                <aside className="hidden md:block md:col-span-4 lg:col-span-3">
-                    <LeftSideBar active={active} onSelect={setActive}/>
-                </aside>
+                    <aside className="hidden md:block md:col-span-4 lg:col-span-3 sticky top-8 h-fit">
+                        <LeftSideBar active={active} onSelect={handleSelect}/>
+                    </aside>
 
-                <main className="col-span-12 md:col-span-8 lg:col-span-9">
-                    <RightContent active={active}/>
-                </main>
+                    <main className="col-span-12 md:col-span-8 lg:col-span-9">
+                        <RightContent />
+                    </main>
                 </div>
             </div>
         </div>

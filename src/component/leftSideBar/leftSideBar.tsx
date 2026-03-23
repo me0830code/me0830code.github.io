@@ -14,7 +14,7 @@ export function LeftSideBar({
     onSelect: (key: SectionKey) => void;
 }) {
     return (
-      <aside className="border-r border-slate-200 pr-8">
+      <aside className="border-r border-slate-200 pr-10">
           <ProfilePhoto/>
           <ProfileInfo/>
           <ContactInfo/>

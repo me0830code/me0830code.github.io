@@ -17,7 +17,7 @@ export function NavigationBar({
                     {
                         TOTAL_SECTION.map((eachSection) => {
                             const isActive = eachSection.key === active;
-                            return <NavigationItem eachItem={eachSection} isActive={isActive} onSelect={onSelect}/>
+                            return <NavigationItem key={eachSection.key} eachItem={eachSection} isActive={isActive} onSelect={onSelect}/>
                         })
                     }
                 </nav>

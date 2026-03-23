@@ -5,7 +5,7 @@ import { CustomizedTextRendering } from "../Others/Helper";
 export function ProfileInfo() {
     return (
         <div className="space-y-3">
-            <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900">
+            <h2 className="mt-8 text-3xl font-bold tracking-tight text-slate-900">
                 {PERSONAL_INFO.MY_NAME}
             </h2>
             
