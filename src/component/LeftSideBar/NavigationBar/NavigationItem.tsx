@@ -1,14 +1,8 @@
-import type { SectionKey } from "../../../data/constant/contentData";
+import type { NavigationItemInfo } from "./interface/NavigationItemInfo";
 
 import { ChevronRight } from "lucide-react"
 
-interface NavigationItemProps {
-    eachItem: { key: SectionKey; sectionTitle: string };
-    isActive: boolean;
-    onSelect: (key: SectionKey) => void;
-}
-
-export function NavigationItem({ eachItem, isActive, onSelect }: NavigationItemProps) {
+export function NavigationItem({ eachItem, isActive, onSelect }: NavigationItemInfo) {
     return (
         <button onClick={() => onSelect(eachItem.key)} className={`group flex items-center w-full py-2 text-left transition-all duration-200 text-sm ${isActive ? "font-bold text-sky-600" : "font-medium text-black hover:text-black"}`}>
             <span className="w-5 flex items-center justify-center">

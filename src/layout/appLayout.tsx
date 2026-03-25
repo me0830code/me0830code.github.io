@@ -49,11 +49,11 @@ export function AppLayout() {
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
             <div className="mx-auto px-8 py-8">
                 <div className="grid grid-cols-14 gap-12">
-                    <aside className="hidden md:block md:col-span-4 lg:col-span-3 sticky top-8 h-fit">
+                    <aside className="pl-2 hidden md:block md:col-span-4 lg:col-span-3 sticky top-8 h-fit">
                         <LeftSideBar active={active} onSelect={handleSelect}/>
                     </aside>
 
-                    <main className="col-span-12 md:col-span-8 lg:col-span-9">
+                    <main className="pr-6 col-span-12 md:col-span-10 lg:col-span-11">
                         <RightContent />
                     </main>
                 </div>
