@@ -6,7 +6,7 @@ export function RightContent() {
             {
                 TOTAL_SECTION.map((eachSection) => {
                     return (
-                        <section key={eachSection.key}>
+                        <section id={eachSection.key} key={eachSection.key}>
                             <eachSection.componentUI sectionTitle={eachSection.sectionTitle}/>
                         </section>
                     );
