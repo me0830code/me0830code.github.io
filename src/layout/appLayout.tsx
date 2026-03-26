@@ -16,7 +16,7 @@ export function AppLayout() {
         
         const element = document.getElementById(key);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({ behavior: "smooth" });
         }
 
         setTimeout(() => {
@@ -39,7 +39,7 @@ export function AppLayout() {
             }
         );
     
-        const sections = document.querySelectorAll('section[id]');
+        const sections = document.querySelectorAll("section[id]");
         sections.forEach((section) => observer.observe(section));
     
         return () => observer.disconnect();

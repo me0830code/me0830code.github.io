@@ -4,6 +4,6 @@ export const LINKS = {
     LINKEDIN: "https://www.linkedin.com/in/chien-yu-yeh",
     GITHUB: "https://github.com/me0830code",
     COUPANG: "https://www.tw.coupang.com",
-    MEDIATEK: "https://www.google.com",
-    PHISON: "https://www.google.com"
+    MEDIATEK: "https://www.mediatek.com/",
+    PHISON: "https://www.phison.com/en/"
 } as const;

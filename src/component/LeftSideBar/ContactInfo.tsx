@@ -1,5 +1,5 @@
 import { TOTAL_INFO } from "../../data/personalData/personalData";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 export function ContactInfo() {
     return (

@@ -1,9 +1,9 @@
 import type { SkillItem } from "./interface/SkillItem";
 
-import { dataBaseInfo, dataBase } from './dataBase';
-import { frameworkLibInfo, frameworkLib } from './frameworkLib';
-import { otherToolInfo, otherTool } from './otherTool';
-import { programmingLanguageInfo, programmingLanguage } from './programmingLanguage';
+import { dataBaseInfo, dataBase } from "./dataBase";
+import { frameworkLibInfo, frameworkLib } from "./frameworkLib";
+import { otherToolInfo, otherTool } from "./otherTool";
+import { programmingLanguageInfo, programmingLanguage } from "./programmingLanguage";
 
 export const MY_SKILL: SkillItem[] = [
     {

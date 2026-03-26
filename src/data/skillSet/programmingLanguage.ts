@@ -8,18 +8,18 @@ export const programmingLanguageInfo: SkillSectionData = {
     backgroundColor: "text-purple-600",
 } as const;
 
-export const programmingLanguage: SkillSetItem[] = [
-    { name: "Java", iconURL: "skill-icons:java-light", needToCustomize: false },
-    { name: "Kotlin", iconURL: "skill-icons:kotlin-light", needToCustomize: false },
-    { name: "Groovy", iconURL: "devicon:groovy", needToCustomize: false },
+export const programmingLanguage: Record<string, SkillSetItem> = {
+    JAVA: { name: "Java", iconURL: "skill-icons:java-light", needToCustomize: false },
+    KOTLIN: { name: "Kotlin", iconURL: "skill-icons:kotlin-light", needToCustomize: false },
+    GROOVY: { name: "Groovy", iconURL: "devicon:groovy", needToCustomize: false },
 
-    { name: "Python", iconURL: "skill-icons:python-light", needToCustomize: false },
-    { name: "C", iconURL: "skill-icons:c", needToCustomize: false },
-    { name: "C++", iconURL: "skill-icons:cpp", needToCustomize: false },
-    { name: "C#", iconURL: "skill-icons:cs", needToCustomize: false },
+    PYTHON: { name: "Python", iconURL: "skill-icons:python-light", needToCustomize: false },
+    C: { name: "C", iconURL: "skill-icons:c", needToCustomize: false },
+    C_PLUS_PLUS: { name: "C++", iconURL: "skill-icons:cpp", needToCustomize: false },
+    C_SHARP: { name: "C#", iconURL: "skill-icons:cs", needToCustomize: false },
 
-    { name: "Swift", iconURL: "skill-icons:swift", needToCustomize: false },
-    { name: "Object-C", iconURL: "logos:apple", needToCustomize: false },
+    SWIFT: { name: "Swift", iconURL: "skill-icons:swift", needToCustomize: false },
+    OBJ_C: { name: "Object-C", iconURL: "logos:apple", needToCustomize: false },
 
-    { name: "JavaScript", iconURL: "skill-icons:javascript", needToCustomize: false }
-] as const;
+    JAVA_SCRIPT: { name: "JavaScript", iconURL: "skill-icons:javascript", needToCustomize: false }
+} as const;

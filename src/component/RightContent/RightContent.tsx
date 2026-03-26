@@ -1,21 +1,17 @@
-import { AboutSection } from "./AboutMe";
-
-import { ProjectsSection } from "../../sections/ProjectsSection";
-import { ExperienceSection } from "../../sections/ExperienceSection";
-
+import { TOTAL_SECTION } from "../../data/constant/contentData";
 
 export function RightContent() {
     return (
-        <div className="flex flex-col gap-20">
-            <section id="aboutMe" className="min-h-[50vh]">
-                <AboutSection />
-            </section>
-            <section id="workExperience" className="min-h-[50vh]">
-                <ExperienceSection />
-            </section>
-            <section id="sideProject" className="min-h-[50vh]">
-                <ProjectsSection />
-            </section>
+        <div className="flex flex-col gap-20 pb-12">
+            {
+                TOTAL_SECTION.map((eachSection) => {
+                    return (
+                        <section id={eachSection.key}>
+                            <eachSection.componentUI/>
+                        </section>
+                    );
+                })
+            }
         </div>
     );
 }
