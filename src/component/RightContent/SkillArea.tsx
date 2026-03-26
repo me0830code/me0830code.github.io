@@ -1,15 +1,16 @@
+import type { ComponentProps } from "../../data/constant/interface/ComponentProps";
 
 import { Icon } from "@iconify/react";
 import { SkillBadge } from "./SkillBadge";
 import { TOTAL_SKILL } from "../../data/skillSet/skillSet";
 
-export function SkillArea() {
+export function SkillArea({ sectionTitle }: ComponentProps) {
     return (
         <div className="flex flex-col gap-10">
             <section className="relative pl-10 pr-10 pt-26 pb-10 rounded-[0.5rem] bg-white border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.03)]">
                 <div className="absolute top-0 left-0 px-6 py-2.5 bg-blue-500 rounded-tl-[0.5rem] rounded-br-[0.5rem] w-52 h-12 flex items-center justify-center">
                     <span className="text-[18px] tracking-tight text-white font-bold leading-none">
-                        Technical Skills
+                        {sectionTitle}
                     </span>
                 </div>
 
