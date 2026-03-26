@@ -13,7 +13,7 @@ export function ProjectArea({ sectionTitle }: ComponentProps) {
                     </span>
                 </div>
 
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <div className="mt-9 grid grid-cols-1 xl:grid-cols-2 gap-8">
                     {
                         TOTAL_PROJECT.map((eachProject) => (
                             <ProjectCard key={eachProject.projectName} {... eachProject}/>

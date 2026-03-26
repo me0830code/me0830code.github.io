@@ -47,7 +47,8 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
-            otherTool.GRAFANA
+            otherTool.GRAFANA,
+            otherTool.CLAUDE,otherTool.WINDSURF,otherTool.JENKINS,otherTool.GITHUB_ACTION
         ],
         projectTag: projectType.AI_ML
     },
