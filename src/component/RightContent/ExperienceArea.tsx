@@ -1,7 +1,8 @@
-import type { ComponentProps } from "../../data/constant/interface/ComponentProps"
+import type { ComponentProps } from "../../data/constant/interface/ComponentProps";
 
-import { TOTAL_EXPERIENCE, EXPERIENCE_INFO } from "../../data/experienceInfo/experienceInfo"
-import { CustomizedTextRendering } from "../Others/Helper"
+import { TOTAL_EXPERIENCE, EXPERIENCE_INFO } from "../../data/experienceInfo/experienceInfo";
+import { CustomizedTextRendering } from "../Others/Helper";
+import { SkillBadge } from "./SkillBadge";
 
 export function ExperienceArea({ sectionTitle }: ComponentProps) {
     return (
@@ -26,11 +27,23 @@ export function ExperienceArea({ sectionTitle }: ComponentProps) {
 
                                 <div className="flex flex-col gap-2">
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                                        <h4 className="text-[20px] font-black text-black transition-colors">
-                                            {eachExperience.jobRole}
-                                        </h4>
+                                        <div className="flex items-center gap-3">
+                                            <h4 className="text-[20px] font-black text-black transition-colors">
+                                                {eachExperience.jobRole}
+                                            </h4>
 
-                                        <span className="text-sm font-semibold text-black bg-slate-50 px-3 py-1 rounded-[0.5rem] border border-slate-200">
+                                            <span className="hidden md:block w-[2px] h-4 bg-gray-300 mx-1"/>
+
+                                            <div className="flex flex-wrap gap-4">
+                                                {
+                                                    Object.entries(eachExperience.jobSkillSet).map(([eachKey, eachTotalItem]) => (
+                                                        <SkillBadge key={eachKey} eachSkillSetItem={eachTotalItem} needPrefixIcon={false}/>
+                                                    ))
+                                                }
+                                            </div>
+                                        </div>
+
+                                        <span className="text-sm font-semibold text-black bg-slate-100 px-3 py-1 rounded-[0.5rem] border border-slate-200">
                                             {eachExperience.jobDuration}
                                         </span>
                                     </div>
