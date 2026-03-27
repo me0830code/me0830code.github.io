@@ -13,7 +13,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectDescription: [
             "Hello"
         ],
-        projectPreviewImageURL: "https://github.com/me0830code/Demo_AEJobsRadar/blob/main/Arch.png?raw=true",
+        projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
         projectLinkURL: "https://github.com/me0830code/Demo_AEJobsRadar",
         projectSkillSet: [
             dataBase.SQL
@@ -21,13 +21,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.WEB
     },
     {
-        projectName: "Project2",
+        projectName: "Baseball Detection",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/Baseball_Detection.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
@@ -36,13 +36,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.CRAWLER
     },
     {
-        projectName: "Project3",
+        projectName: "Oivita",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/Oivita.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
@@ -50,13 +50,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.AI_ML
     },
     {
-        projectName: "Project4",
+        projectName: "One Piece",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/One_Piece.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
@@ -65,13 +65,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.MOBILE_APP
     },
     {
-        projectName: "Project5",
+        projectName: "NCKU Library",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/NCKU_Library.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
@@ -79,13 +79,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.AI_ML
     },
     {
-        projectName: "Project6",
+        projectName: "Furkids",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/Furkids.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
@@ -93,13 +93,13 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.AI_ML
     },
     {
-        projectName: "Project7",
+        projectName: "Always Baseball",
         projectYear: "2026",
         projectDescription: [
             "This is first line",
             "This is second line"
         ],
-        projectPreviewImageURL: "projectPreview/test.png",
+        projectPreviewImageURL: "projectPreview/Always_Baseball.png",
         projectLinkURL: "https://www.google.com",
         projectSkillSet: [
             dataBase.SQL,
