@@ -25,15 +25,13 @@ export function ProjectCard({projectName, projectYear, projectDescription, proje
                                 </span>
                             </div>
 
-                            <div className="">
-                                {
-                                    projectDescription.map((eachDescription, index) => (
-                                        <p key={index} className="max-w-80 text-black text-[16px] leading-relaxed mb-2">
-                                            {eachDescription}
-                                        </p>
-                                    ))
-                                }
-                            </div>
+                            {
+                                projectDescription.map((eachDescription, index) => (
+                                    <p key={index} className="max-w-80 text-black text-[16px] leading-relaxed mb-2">
+                                        {eachDescription}
+                                    </p>
+                                ))
+                            }
                         </div>
 
                         <div className="mt-6 flex-1 shrink-0 flex items-center justify-end h-full">
