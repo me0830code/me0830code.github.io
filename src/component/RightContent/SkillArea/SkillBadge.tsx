@@ -1,4 +1,4 @@
-import type { SkillSetItem } from "../../data/skillSet/interface/SkillSetItem";
+import type { SkillSetItem } from "../../../data/skillSet/interface/SkillSetItem";
 
 import { Icon } from "@iconify/react";
 

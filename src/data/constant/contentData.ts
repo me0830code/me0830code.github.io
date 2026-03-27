@@ -2,8 +2,8 @@ import type { ContentSectionData } from "./interface/ContentSectionData";
 
 import { AboutMe } from "../../component/RightContent/AboutMe";
 import { ExperienceArea } from "../../component/RightContent/ExperienceArea";
-import { ProjectArea } from "../../component/RightContent/ProjectArea";
-import { SkillArea } from "../../component/RightContent/SkillArea";
+import { ProjectArea } from "../../component/RightContent/ProjectArea/ProjectArea";
+import { SkillArea } from "../../component/RightContent/SkillArea/SkillArea";
 
 export const CONTENT_SECTION: Record<string, ContentSectionData> = {
     AboutMe: { key: "AboutMe", sectionTitle: "Hello World 😊", componentUI: AboutMe},

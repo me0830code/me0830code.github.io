@@ -1,8 +1,8 @@
-import type { ComponentProps } from "../../data/constant/interface/ComponentProps";
+import type { ComponentProps } from "../../../data/constant/interface/ComponentProps";
 
 import { Icon } from "@iconify/react";
 import { SkillBadge } from "./SkillBadge";
-import { TOTAL_SKILL } from "../../data/skillSet/skillSet";
+import { TOTAL_SKILL } from "../../../data/skillSet/skillSet";
 
 export function SkillArea({ sectionTitle }: ComponentProps) {
     return (

@@ -1,7 +1,7 @@
-import type { ComponentProps } from "../../data/constant/interface/ComponentProps"
+import type { ComponentProps } from "../../data/constant/interface/ComponentProps";
 
-import { PERSONAL_INFO, PERSONAL_PHOTO } from "../../data/personalData/personalData"
-import { CustomizedTextRendering } from "../Others/Helper"
+import { PERSONAL_INFO, PERSONAL_PHOTO } from "../../data/personalData/personalData";
+import { CustomizedTextRendering } from "../Others/Helper";
 
 export function AboutMe({ sectionTitle }: ComponentProps) {
     return (
@@ -14,7 +14,7 @@ export function AboutMe({ sectionTitle }: ComponentProps) {
                 </div>
 
                 <div className="flex flex-col gap-6">
-                    <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tight">
+                    <h1 className="mt-4 text-5xl md:text-6xl font-black text-slate-900 tracking-tight">
                         Hi, I'm Kevin
                     </h1>
 

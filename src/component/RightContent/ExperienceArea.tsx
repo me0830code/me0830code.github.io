@@ -2,7 +2,7 @@ import type { ComponentProps } from "../../data/constant/interface/ComponentProp
 
 import { TOTAL_EXPERIENCE, EXPERIENCE_INFO } from "../../data/experienceInfo/experienceInfo";
 import { CustomizedTextRendering } from "../Others/Helper";
-import { SkillBadge } from "./SkillBadge";
+import { SkillBadge } from "./SkillArea/SkillBadge";
 
 export function ExperienceArea({ sectionTitle }: ComponentProps) {
     return (
