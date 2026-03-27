@@ -1,6 +1,6 @@
-import type { ExperienceData } from "./interface/ExperienceData"
+import type { ExperienceData } from "./interface/ExperienceData";
 
-import { COMPANY_INFO } from "./companyInfo"
+import { COMPANY_INFO } from "./companyInfo";
 import { dataBase } from "../skillSet/dataBase";
 import { frameworkLib } from "../skillSet/frameworkLib";
 import { otherTool } from "../skillSet/otherTool";
@@ -18,7 +18,13 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                     "- Architected CI/CD pipelines, containerized services with Docker, enforced code quality with SonarQube, automated Kubernetes deployments and set up Grafana monitoring dashboards to improve system reliability and speed up troubleshooting."
                 ],
                 jobSkillSet: [
-                    dataBase.SQL
+                    programmingLanguage.JAVA,
+                    programmingLanguage.KOTLIN,
+                    frameworkLib.SPRING_BOOT,
+                    otherTool.DOCKER,
+                    otherTool.KUBERNETES,
+                    dataBase.REDIS,
+                    otherTool.GRAFANA
                 ]
             },
     MEDIATEK: {
@@ -31,7 +37,13 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                     "- Developed an automation tool for SoC integration tests using Python (Flask) and Jenkins to build, package, and flash images to EVB boards via RESTful APIs, automating UXM to trigger simulated scenarios and increasing equipment utilization by **30%+**."
                 ],
                 jobSkillSet: [
-                    frameworkLib.SPRING_BOOT
+                    programmingLanguage.C,
+                    programmingLanguage.C_PLUS_PLUS,
+                    programmingLanguage.PYTHON,
+                    frameworkLib.FLASK,
+                    frameworkLib.QT,
+                    dataBase.MY_SQL,
+                    otherTool.JENKINS
                 ]
             },
     PHISON: {
@@ -42,8 +54,7 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                     "- Participated in the development and optimization of the SSD Garbage Collection (GC) module using C, and designed stress tests to profile performance and verify proper functioning for SoCs used by SK Hynix, Micron, and Kioxia."
                 ],
                 jobSkillSet: [
-                    otherTool.GRAFANA,
-                    programmingLanguage.C_PLUS_PLUS
+                    programmingLanguage.C
                 ]
             },
 } as const;
