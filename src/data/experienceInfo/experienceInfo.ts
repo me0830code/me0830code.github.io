@@ -54,7 +54,8 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                     "- Participated in the development and optimization of the SSD Garbage Collection (GC) module using C, and designed stress tests to profile performance and verify proper functioning for SoCs used by SK Hynix, Micron, and Kioxia."
                 ],
                 jobSkillSet: [
-                    programmingLanguage.C
+                    programmingLanguage.C,
+                    otherTool.JENKINS
                 ]
             },
 } as const;
