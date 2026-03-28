@@ -7,3 +7,14 @@ export const LINKS = {
     MEDIATEK: "https://www.mediatek.com/",
     PHISON: "https://www.phison.com/en/"
 } as const;
+
+export const PROJECT_LINK = {
+    COUPANG: "https://www.tw.coupang.com/",
+    AE_JOB_RADAR: "https://github.com/me0830code/Demo_AEJobsRadar",
+    BASEBALL_DETECTION: "https://github.com/me0830code/Demo_BaseballDetection",
+    OIVITA: "https://github.com/me0830code/Demo_Oivita",
+    ONE_PIECE: "https://github.com/me0830code/Demo_OnePiece",
+    NCKU_LIBRARY: "https://github.com/me0830code/Demo_NCKULibrary",
+    FURKIDS: "https://github.com/me0830code/Demo_Furkids",
+    ALWAYS_BASEBALL: "https://github.com/me0830code/Demo_AlwaysBaseball",
+}

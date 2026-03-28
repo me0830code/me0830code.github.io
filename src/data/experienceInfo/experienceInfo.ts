@@ -19,10 +19,10 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 ],
                 jobSkillSet: [
                     programmingLanguage.JAVA,
-                    programmingLanguage.KOTLIN,
                     frameworkLib.SPRING_BOOT,
+                    otherTool.JENKINS,
                     otherTool.DOCKER,
-                    otherTool.KUBERNETES,
+                    dataBase.MY_SQL,
                     dataBase.REDIS,
                     otherTool.GRAFANA
                 ]

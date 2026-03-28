@@ -22,7 +22,7 @@ export const otherTool: Record<string, SkillSetItem> = {
     AWS: { name: "AWS", iconURL: "skill-icons:aws-light", needToCustomize: false },
     JENKINS: { name: "Jenkins", iconURL: "skill-icons:jenkins-light", needToCustomize: false },
     DOCKER: { name: "Docker", iconURL: "skill-icons:docker", needToCustomize: false },
-    KUBERNETES: { name: "Kubernetes", iconURL: "skill-icons:kubernetes", needToCustomize: false },
+    KUBERNETES: { name: "K8s", iconURL: "skill-icons:kubernetes", needToCustomize: false },
     KAFKA: { name: "Kafka", iconURL: "skill-icons:kafka", needToCustomize: false },
     SONAR_QUBE: { name: "SonarQube", iconURL: "devicon:sonarqube", needToCustomize: false },
     GRAFANA: { name: "Grafana", iconURL: "skill-icons:grafana-light", needToCustomize: false },
