@@ -33,7 +33,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "My Website",
         projectYear: "Dev in 2026",
         projectDescription: [
-            "Built a personal portfolio website to showcase my experience, projects, and technical skills in one place."
+            "Built a personal portfolio website to showcase my experience, projects, and technical skills."
         ],
         projectPreviewImageURL: "projectPreview/My_Website.png",
         projectLinkURL: PROJECT_LINK.MY_WEBSITE,
@@ -93,7 +93,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "NCKU Library",
         projectYear: "Dev in 2021",
         projectDescription: [
-            "Built and launched the iOS app from 0 to 1 in collaboration with a UI/UX designer, reaching **12K** downloads.",
+            "Built and launched the library iOS app from 0 to 1, reaching **1.2K** downloads.",
         ],
         projectPreviewImageURL: "projectPreview/NCKU_Library.png",
         projectLinkURL: PROJECT_LINK.NCKU_LIBRARY,
