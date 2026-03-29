@@ -21,5 +21,5 @@ export const programmingLanguage: Record<string, SkillSetItem> = {
     SWIFT: { name: "Swift", iconURL: "skill-icons:swift", needToCustomize: false },
     OBJ_C: { name: "Object-C", iconURL: "logos:apple", needToCustomize: false },
 
-    JAVA_SCRIPT: { name: "JavaScript", iconURL: "skill-icons:javascript", needToCustomize: false }
+    TYPE_SCRIPT: { name: "TypeScript", iconURL: "skill-icons:typescript", needToCustomize: false }
 } as const;

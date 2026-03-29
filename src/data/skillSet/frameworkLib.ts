@@ -9,7 +9,7 @@ export const frameworkLibInfo: SkillSectionData = {
 } as const;
 
 export const frameworkLib: Record<string, SkillSetItem> = {
-    REACT: { name: "React", iconURL: "skill-icons:swift", needToCustomize: false },
+    REACT: { name: "React", iconURL: "skill-icons:react-dark", needToCustomize: false },
     VUE: { name: "Vue", iconURL: "skill-icons:vuejs-light", needToCustomize: false },
     DOT_NET: { name: ".NET", iconURL: "skill-icons:dotnet", needToCustomize: false },
 

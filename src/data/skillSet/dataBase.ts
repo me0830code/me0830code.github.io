@@ -11,6 +11,7 @@ export const dataBaseInfo: SkillSectionData = {
 export const dataBase: Record<string, SkillSetItem> = {
     SQL: { name: "SQL", iconURL: "devicon:azuresqldatabase", needToCustomize: false },
     NO_SQL: { name: "NoSQL", iconURL: "material-icon-theme:json", needToCustomize: false },
+    SQL_LITE: { name: "SQLite", iconURL: "devicon:sqlite", needToCustomize: false },
 
     MY_SQL: { name: "MySQL", iconURL: "skill-icons:mysql-light", needToCustomize: false },
     DYNAMO_DB: { name: "DynamoDB", iconURL: "skill-icons:dynamodb-light", needToCustomize: false },

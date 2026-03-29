@@ -10,6 +10,7 @@ export const LINKS = {
 
 export const PROJECT_LINK = {
     COUPANG: "https://www.tw.coupang.com/",
+    MY_WEBSITE: "https://github.com/me0830code/me0830code.github.io",
     AE_JOB_RADAR: "https://github.com/me0830code/Demo_AEJobsRadar",
     BASEBALL_DETECTION: "https://github.com/me0830code/Demo_BaseballDetection",
     OIVITA: "https://github.com/me0830code/Demo_Oivita",
@@ -17,4 +18,7 @@ export const PROJECT_LINK = {
     NCKU_LIBRARY: "https://github.com/me0830code/Demo_NCKULibrary",
     FURKIDS: "https://github.com/me0830code/Demo_Furkids",
     ALWAYS_BASEBALL: "https://github.com/me0830code/Demo_AlwaysBaseball",
+    TWEETER: "https://github.com/me0830code/Code_Tweeter",
+    TELEPHONE_BOOK: "https://github.com/me0830code/Code_TelephoneBook",
+    SMASH_TAG: "https://github.com/me0830code/Code_Smashtag",
 }

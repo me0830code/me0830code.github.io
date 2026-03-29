@@ -30,6 +30,21 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.MOBILE_APP_AND_WEB
     },
     {
+        projectName: "My Website",
+        projectYear: "Dev in 2026",
+        projectDescription: [
+            "Built a personal portfolio website to showcase my experience, projects, and technical skills in one place."
+        ],
+        projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
+        projectLinkURL: PROJECT_LINK.MY_WEBSITE,
+        projectSkillSet: [
+            programmingLanguage.TYPE_SCRIPT,
+            frameworkLib.REACT,
+            otherTool.GITHUB_ACTION,
+        ],
+        projectTag: projectType.WEB
+    },
+    {
         projectName: "AE Job Radar",
         projectYear: "Dev in 2025",
         projectDescription: [
@@ -124,6 +139,50 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectTag: projectType.MOBILE_APP
     },
     {
+        projectName: "Tweeter",
+        projectYear: "Dev in 2019",
+        projectDescription: [
+            "Built a simple Twitter-like timeline app to practice MVVM design patterns"
+        ],
+        projectPreviewImageURL: "projectPreview/Twetter.png",
+        projectLinkURL: PROJECT_LINK.TWEETER,
+        projectSkillSet: [
+            programmingLanguage.SWIFT,
+            dataBase.FIREBASE,
+        ],
+        projectTag: projectType.MOBILE_APP
+    },
+    {
+        projectName: "TelephoneBook",
+        projectYear: "Dev in 2019",
+        projectDescription: [
+            "Served as a **teaching assistant** for an Android development course at National Cheng Kung University, mentoring students in app development."
+        ],
+        projectPreviewImageURL: "projectPreview/TelephoneBook.png",
+        projectLinkURL: PROJECT_LINK.TELEPHONE_BOOK,
+        projectSkillSet: [
+            programmingLanguage.JAVA,
+            dataBase.SQL_LITE,
+            otherTool.GIT,
+        ],
+        projectTag: projectType.MOBILE_APP
+    },
+    {
+        projectName: "Smashtag",
+        projectYear: "Dev in 2017",
+        projectDescription: [
+            "Built an iOS app as a Stanford CS193P practice project using Twitter data to learn MVC design patterns and Core Data."
+        ],
+        projectPreviewImageURL: "projectPreview/Smashtag.png",
+        projectLinkURL: PROJECT_LINK.SMASH_TAG,
+        projectSkillSet: [
+            programmingLanguage.SWIFT,
+            otherTool.RESTFUL_API,
+            otherSkill.CORE_DATA,
+        ],
+        projectTag: projectType.MOBILE_APP
+    },
+    {
         projectName: "Furkids",
         projectYear: "Dev in 2017",
         projectDescription: [
@@ -138,7 +197,7 @@ export const PROJECT_INFO: ProjectItem[] = [
             dataBase.DYNAMO_DB,
         ],
         projectTag: projectType.MOBILE_APP
-    }
+    },
 ] as const;
 
 const ITEMS_PER_PAGE = 4;

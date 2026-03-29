@@ -9,7 +9,7 @@ export function ProjectScrollButton({scrollRef, curDirection}: ProjectScrollProp
 
     return (
         <button onClick={() => scrollProjectArea(scrollRef, curDirection)} className={`${curDirection === ProjectScrollDirection.LEFT ? "mr-4" : "ml-4"} flex items-center justify-center rounded-full ${shouldDisabledButton ? "" : "hover:scale-150 transition-transform duration-400"}"`}>
-            <img className="w-40 h-40 object-contain" src={shouldDisabledButton ? (isLeftButton ? ProjectScrollDirection.LEFT.iconURLDisabledButton : ProjectScrollDirection.RIGHT.iconURLDisabledButton) : (isLeftButton ? ProjectScrollDirection.LEFT.iconURLEnabledButton : ProjectScrollDirection.RIGHT.iconURLEnabledButton)} alt={curDirection.value}/>
+            <img className="w-50 h-50 object-contain" src={shouldDisabledButton ? (isLeftButton ? ProjectScrollDirection.LEFT.iconURLDisabledButton : ProjectScrollDirection.RIGHT.iconURLDisabledButton) : (isLeftButton ? ProjectScrollDirection.LEFT.iconURLEnabledButton : ProjectScrollDirection.RIGHT.iconURLEnabledButton)} alt={curDirection.value}/>
         </button>
     );
 }
