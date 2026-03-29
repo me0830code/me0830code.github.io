@@ -35,7 +35,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectDescription: [
             "Built a personal portfolio website to showcase my experience, projects, and technical skills in one place."
         ],
-        projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
+        projectPreviewImageURL: "projectPreview/My_Website.png",
         projectLinkURL: PROJECT_LINK.MY_WEBSITE,
         projectSkillSet: [
             programmingLanguage.TYPE_SCRIPT,
