@@ -4,7 +4,6 @@ import { ProfilePhoto } from "./ProfilePhoto";
 import { ProfileInfo } from "./ProfileInfo";
 import { ContactInfo } from "./ContactInfo";
 import { NavigationBar } from "./NavigationBar/NavigationBar";
-import { ViewMyResume } from "./ViewMyResume";
 
 export function LeftSideBar({
     active,
@@ -20,8 +19,6 @@ export function LeftSideBar({
           <ContactInfo/>
           <hr className="my-6 border-t-2 border-slate-200"/>
           <NavigationBar active={active} onSelect={onSelect}/>
-          <hr className="my-6 border-t-2 border-slate-200"/>
-          <ViewMyResume/>
       </aside>
     );
 }

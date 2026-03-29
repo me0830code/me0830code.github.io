@@ -1,6 +1,6 @@
 import type { ContentSectionData } from "./interface/ContentSectionData";
 
-import { AboutMe } from "../../component/RightContent/AboutMe";
+import { AboutMe } from "../../component/RightContent/AboutMe/AboutMe";
 import { ExperienceArea } from "../../component/RightContent/ExperienceArea";
 import { ProjectArea } from "../../component/RightContent/ProjectArea/ProjectArea";
 import { SkillArea } from "../../component/RightContent/SkillArea/SkillArea";
