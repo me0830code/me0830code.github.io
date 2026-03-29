@@ -206,3 +206,5 @@ export const TOTAL_PROJECT_GROUP: ProjectItem[][] = Array.from(
     { length: Math.ceil(Object.values(PROJECT_INFO).length / ITEMS_PER_PAGE) },
     (_, i) => Object.values(PROJECT_INFO).slice(i * ITEMS_PER_PAGE, i * ITEMS_PER_PAGE + ITEMS_PER_PAGE)
 );
+
+export const TOTAL_PROJECT_LIST: ProjectItem[] = Object.values(PROJECT_INFO);

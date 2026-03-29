@@ -2,10 +2,79 @@ import type { SectionKey } from "../data/constant/contentData";
 
 import { useState, useRef, useEffect } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
+import { TopNavigatioBar } from "../component/LeftSideBar/NavigationBar/TopNavigationBar";
 import { RightContent } from "../component/RightContent/RightContent";
 import { CONTENT_SECTION } from "../data/constant/contentData";
+import { MiniProfileHeader } from "../component/LeftSideBar/MiniProfileHeader";
 
 export function AppLayout() {
+    const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
+
+    const isManualScrolling = useRef(false);
+
+    const handleSelect = (key: SectionKey) => {
+        isManualScrolling.current = true;
+        setActive(key);
+
+        const element = document.getElementById(key);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        setTimeout(() => {
+            isManualScrolling.current = false;
+        }, 1000);
+    };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !isManualScrolling.current) {
+                        setActive(entry.target.id as SectionKey);
+                    }
+                });
+            },
+            {
+                rootMargin: "0px 0px -80% 0px",
+                threshold: 0,
+            }
+        );
+
+        const sections = document.querySelectorAll("section[id]");
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
+            <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+                <div className="mb-4 md:hidden">
+                    <MiniProfileHeader />
+                </div>
+    
+                <div className="sticky top-0 z-30 -mx-1 mb-4 bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)] px-1 py-1 md:hidden">
+                    <TopNavigatioBar active={active} onSelect={handleSelect} />
+                </div>
+    
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8 lg:gap-12">
+                    <aside className="hidden md:block md:col-span-4 lg:col-span-3">
+                        <div className="sticky top-8">
+                            <LeftSideBar active={active} onSelect={handleSelect} />
+                        </div>
+                    </aside>
+    
+                    <main className="md:col-span-8 lg:col-span-9">
+                        <RightContent />
+                    </main>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export function AppLayout2() {
     const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
 
     const isManualScrolling = useRef(false);
