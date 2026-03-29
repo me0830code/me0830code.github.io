@@ -1,6 +1,6 @@
 import type { ComponentProps } from "../../data/constant/interface/ComponentProps";
 
-import { PERSONAL_INFO, PERSONAL_PHOTO } from "../../data/personalData/personalData";
+import { PERSONAL_INFO, TOTAL_MY_PHOTO } from "../../data/personalData/personalData";
 import { CustomizedTextRendering } from "../Others/Helper";
 
 export function AboutMe({ sectionTitle }: ComponentProps) {
@@ -18,18 +18,29 @@ export function AboutMe({ sectionTitle }: ComponentProps) {
                         Hi, I'm Kevin
                     </h1>
 
-                    <p className="mt-4 mb-4 text-lg text-black leading-relaxed">
-                        {CustomizedTextRendering(PERSONAL_INFO.DETAIL_INFO)}
-                    </p>
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+                        {
+                            PERSONAL_INFO.DETAIL_INFO.map((eachInfo, index) => (
+                                <p key={index}>{CustomizedTextRendering(eachInfo)}</p>
+                            ))
+                        }
+                    </div>
 
                     <hr className="mb-4 border-t-1 border-slate-200"/>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         {
-                            PERSONAL_PHOTO.map((eachPhoto) => (
-                                <div key={eachPhoto.name} className="aspect-square bg-slate-100 rounded-[0.5rem] overflow-hidden border border-slate-200">
-                                  <img src={eachPhoto.imageURL} alt={eachPhoto.name} className="w-full h-full object-cover"/>
+                            TOTAL_MY_PHOTO.map((eachPhoto) => (
+                                <div key={eachPhoto.name} className="flex flex-col gap-2">
+            
+                                <div className="aspect-square bg-slate-100 rounded-[0.5rem] overflow-hidden border border-slate-200">
+                                    <img src={eachPhoto.imageURL} alt={eachPhoto.name} className={`w-full h-full object-cover object-${eachPhoto.adjustDirection}`} style={{ imageRendering: 'auto' }}/>
                                 </div>
+                    
+                                <p className="text-sm text-slate-600 text-center truncate">
+                                    {eachPhoto.description}
+                                </p>
+                            </div>
                             ))
                         }
                     </div>

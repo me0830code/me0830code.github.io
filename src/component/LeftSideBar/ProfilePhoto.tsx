@@ -1,9 +1,9 @@
-import { LINKS } from "../../data/constant/generalLink";
+import { PERSONAL_PHOTO } from "../../data/personalData/personalData";
 
 export function ProfilePhoto() {
     return (
         <div className="flex justify-center">
-            <img src={LINKS.MY_PHOTO} alt="Profile" className="h-50 w-50 object-cover rounded-[0.5rem] mt-2"/>
+            <img src={PERSONAL_PHOTO.PROFILE_PHOTO.imageURL} alt={PERSONAL_PHOTO.PROFILE_PHOTO.name} className={`max-w-[250px] w-full aspect aspect-square object-cover object-${PERSONAL_PHOTO.PROFILE_PHOTO.adjustDirection} rounded-[0.5rem] mt-2`} style={{ imageRendering: 'auto' }}/>
         </div>
     );
 }
