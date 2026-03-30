@@ -20,7 +20,7 @@ export function NavigationBar({
 
         if (!navElement || !activeElement) return;
 
-        if (window.innerWidth >= 768) return;
+        if (window.innerWidth >= 1280) return;
 
         const navRect = navElement.getBoundingClientRect();
         const activeRect = activeElement.getBoundingClientRect();
@@ -47,7 +47,7 @@ export function NavigationBar({
     return (
         <nav
             ref={navRef}
-            className="hide-scrollbar flex w-full gap-2 overflow-x-auto whitespace-nowrap pb-1 md:block md:space-y-1 md:overflow-visible md:whitespace-normal md:pb-0"
+            className="hide-scrollbar flex w-full gap-2 overflow-x-auto whitespace-nowrap pb-1 xl:block xl:space-y-1 xl:overflow-visible xl:whitespace-normal xl:pb-0"
         >
             {TOTAL_SECTION.map((eachSection) => {
                 const isActive = eachSection.key === active;

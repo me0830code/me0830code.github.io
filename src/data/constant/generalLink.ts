@@ -1,5 +1,6 @@
 export const LINKS = {
     RESUME: "https://www.google.com",
+    GMAIL: "mailto:me0830code@gmail.com",
     LINKEDIN: "https://www.linkedin.com/in/chien-yu-yeh",
     GITHUB: "https://github.com/me0830code",
     COUPANG: "https://www.tw.coupang.com",

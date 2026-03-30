@@ -3,8 +3,9 @@ import type { ContactItem } from "./interface/ContactItem";
 import { LINKS } from "../constant/generalLink";
 
 export const PERSONAL_INFO = {
-    MY_NAME: "Chien-Yu (Kevin) Yeh",
-    CURRENT_TITLE: "Senior Software Engineer",
+    MY_NAME: "Chien-Yu Yeh",
+    MY_EN_NAME: "Kevin",
+    CURRENT_TITLE: "Senior Backend Engineer",
     BRIEF_INTRO: "Currently leading **Cart and Checkout backend** services in a large-scale e-commerce system.",
     DETAIL_INFO: [
         "Software engineer with 7+ years of development experience across **backend, frontend, AI/ML, and embedded systems**. Currently a Senior Software Engineer at Coupang, **leading Cart and Checkout backend services** in a large-scale e-commerce environment, and shipping features that grew premium memberships by **17%** and added **810K** members while improving service reliability.",
@@ -27,10 +28,10 @@ export const PERSONAL_PHOTO = {
 export const TOTAL_MY_PHOTO = Object.values(PERSONAL_PHOTO.LIFE_PHOTO);
 
 export const CONTACT_INFO: ContactItem[] = [
-    { key: "whatsapp", value: "+886 937 532 865", iconURL: "logos:whatsapp-icon", isLinkActive: false, linkURL: "", customSize: "24" },
-    { key: "email", value: "me0830code@gmail.com", iconURL: "logos:google-gmail", isLinkActive: false, linkURL: "", customSize: "24" },
-    { key: "github", value: "me0830code", iconURL: "logos:github-icon", isLinkActive: true, linkURL: LINKS.GITHUB, customSize: "24" },
-    { key: "linkedin", value: "Chien-Yu (Kevin) Yeh", iconURL: "logos:linkedin-icon", isLinkActive: true, linkURL: LINKS.LINKEDIN, customSize: "24" }, 
+    { key: "whatsapp", value: "+886 937 532 865", iconURL: "logos:whatsapp-icon", isLinkActive: false, linkURL: "", customSize: "18" },
+    { key: "email", value: "me0830code", iconURL: "logos:google-gmail", isLinkActive: true, linkURL: LINKS.GMAIL, customSize: "18" },
+    { key: "github", value: "me0830code", iconURL: "logos:github-icon", isLinkActive: true, linkURL: LINKS.GITHUB, customSize: "18" },
+    { key: "linkedin", value: "Chien-Yu (Kevin) Yeh", iconURL: "logos:linkedin-icon", isLinkActive: true, linkURL: LINKS.LINKEDIN, customSize: "18" }, 
 ] as const;
 
 export const TOTAL_INFO = Object.values(CONTACT_INFO);

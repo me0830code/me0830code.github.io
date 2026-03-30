@@ -15,15 +15,15 @@ export function AboutMe({ sectionTitle }: ComponentProps) {
                 </div>
 
                 <div className="flex flex-col gap-5 md:gap-6">
-                    <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-                        <h1 className="text-4xl font-black tracking-tight text-slate-900 sm:text-5xl md:mt-4 md:text-6xl">
-                            Hi, I'm Kevin
-                        </h1>
+                <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                    <h1 className="text-4xl font-black tracking-tight text-slate-900 sm:text-5xl md:mt-4 md:text-6xl">
+                        Hi, I'm Kevin
+                    </h1>
 
-                        <div className="w-full md:w-auto">
-                            <ViewMyResume />
-                        </div>
+                    <div className="w-full md:w-auto">
+                        <ViewMyResume />
                     </div>
+                </div>
 
                     <div className="flex flex-col gap-4 sm:gap-5">
                         {PERSONAL_INFO.DETAIL_INFO.map((eachInfo, index) => (
@@ -35,7 +35,7 @@ export function AboutMe({ sectionTitle }: ComponentProps) {
 
                     <hr className="mb-2 border-t border-slate-200 md:mb-4" />
 
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                         {TOTAL_MY_PHOTO.map((eachPhoto) => (
                             <figure key={eachPhoto.name} className="flex flex-col gap-3">
                                 <div className="aspect-[4/5] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">

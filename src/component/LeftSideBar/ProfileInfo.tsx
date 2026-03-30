@@ -5,10 +5,10 @@ import { CustomizedTextRendering } from "../Others/Helper";
 export function ProfileInfo() {
     return (
         <div className="space-y-3">
-            <h2 className="mt-10 text-3xl font-bold tracking-tight text-slate-900">
+            <h2 className="mt-10 text-2xl font-bold tracking-tight text-slate-900">
                 {PERSONAL_INFO.MY_NAME}
             </h2>
-            
+
             <p className="mt-4 text-base text-sky-600 font-semibold">
                 {PERSONAL_INFO.CURRENT_TITLE} at
 

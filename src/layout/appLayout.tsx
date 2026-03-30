@@ -16,7 +16,15 @@ export function AppLayout() {
         isManualScrolling.current = true;
         setActive(key);
 
-        const element = document.getElementById(key);
+        const isTopNavLayout = window.innerWidth < 1280;
+
+        const targetId =
+            isTopNavLayout && key === CONTENT_SECTION.AboutMe.key
+                ? "mini-profile-header"
+                : key;
+
+        const element = document.getElementById(targetId);
+
         if (element) {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
@@ -49,23 +57,23 @@ export function AppLayout() {
 
     return (
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
-            <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
-                <div className="mb-4 md:hidden">
-                    <MiniProfileHeader />
-                </div>
-    
-                <div className="sticky top-0 z-30 -mx-1 mb-4 bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)] px-1 py-1 md:hidden">
+            <div className="px-4 py-4 sm:px-6 sm:py-6 lg:px-10 lg:py-8 xl:px-14 xl:py-10">
+                <div className="sticky top-0 z-30 -mx-1 mb-4 bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)] px-1 py-1 xl:hidden">
                     <TopNavigatioBar active={active} onSelect={handleSelect} />
                 </div>
-    
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8 lg:gap-12">
-                    <aside className="hidden md:block md:col-span-4 lg:col-span-3">
+
+                <div className="mb-4 xl:hidden">
+                    <MiniProfileHeader />
+                </div>
+
+                <div className="grid grid-cols-1 gap-6 xl:grid-cols-12 xl:gap-10">
+                    <aside className="hidden xl:block xl:col-span-3">
                         <div className="sticky top-8">
                             <LeftSideBar active={active} onSelect={handleSelect} />
                         </div>
                     </aside>
-    
-                    <main className="md:col-span-8 lg:col-span-9">
+
+                    <main className="xl:col-span-9">
                         <RightContent />
                     </main>
                 </div>

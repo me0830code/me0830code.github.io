@@ -11,15 +11,15 @@ export const NavigationItem = forwardRef<HTMLButtonElement, NavigationItemInfo>(
                 onClick={() => onSelect(eachItem.key)}
                 className={`
                     group shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
-                    md:flex md:w-full md:items-center md:rounded-none md:border-0 md:px-0 md:py-2 md:text-left
+                    xl:flex xl:w-full xl:items-center xl:rounded-none xl:border-0 xl:px-0 xl:py-2 xl:text-left
                     ${
                         isActive
-                            ? "border-sky-200 bg-sky-50 font-bold text-sky-600 md:bg-transparent"
-                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 md:bg-transparent"
+                            ? "border-sky-300 bg-sky-100 font-bold text-sky-700 shadow-sm xl:bg-transparent xl:shadow-none"
+                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 xl:bg-transparent"
                     }
                 `}
             >
-                <span className="hidden w-5 items-center justify-center md:flex">
+                <span className="hidden w-5 items-center justify-center xl:flex">
                     <span
                         className={`transform transition-all duration-300 ${
                             isActive ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"

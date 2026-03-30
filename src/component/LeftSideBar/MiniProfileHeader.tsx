@@ -9,7 +9,7 @@ export function MiniProfileHeader() {
     const infoItems = TOTAL_INFO.filter((item) => !item.isLinkActive);
 
     return (
-        <section className="rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
+        <div id="mini-profile-header" className="scroll-mt-24 rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
             <div className="flex items-start gap-4">
                 <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
                     <img
@@ -83,6 +83,6 @@ export function MiniProfileHeader() {
                     ))}
                 </div>
             )}
-        </section>
+        </div>
     );
 }
