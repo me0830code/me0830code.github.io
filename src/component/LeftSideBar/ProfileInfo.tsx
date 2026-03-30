@@ -9,12 +9,25 @@ export function ProfileInfo() {
                 {PERSONAL_INFO.MY_NAME}
             </h2>
 
-            <p className="mt-4 text-base text-sky-600 font-semibold">
-                {PERSONAL_INFO.CURRENT_TITLE} at
+            <p className="mt-4 text-base font-semibold text-sky-600">
+                <span>{PERSONAL_INFO.CURRENT_TITLE}</span>
 
-                <a href={COMPANY_INFO.COUPANG.companyLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-1 -mx-2 rounded-md transition-all duration-200 hover:bg-red-50 group">
-                    <img src={COMPANY_INFO.COUPANG.logoURL} alt={COMPANY_INFO.COUPANG.companyName} className="h-[1.1em] w-auto object-contain transition-transform group-hover:scale-105 align-middle translate-y-[5px]"/>
-                </a>
+                <span className="ml-0.5 inline-flex items-center gap-0.5">
+                    <span>at</span>
+
+                    <a
+                        href={COMPANY_INFO.COUPANG.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center rounded-md px-1 py-1 mt-0.5 transition-all duration-200 hover:bg-red-50 group"
+                    >
+                        <img
+                            src={COMPANY_INFO.COUPANG.logoURL}
+                            alt={COMPANY_INFO.COUPANG.companyName}
+                            className="h-[1.1em] w-auto object-contain translate-y-[1px] transition-transform group-hover:scale-105"
+                        />
+                    </a>
+                </span>
             </p>
             
             <p className="mt-3 max-w-xs text-sm leading-7">

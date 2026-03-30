@@ -9,10 +9,8 @@ export function TopNavigatioBar({
     onSelect: (key: SectionKey) => void;
 }) {
     return (
-        <div className="rounded-2xl border border-slate-200/80 bg-white/85 px-3 py-3 shadow-sm backdrop-blur">
-            <div className="overflow-hidden">
-                <NavigationBar active={active} onSelect={onSelect} />
-            </div>
+        <div className="rounded-[0.5rem] border border-slate-200/80 bg-white/85 px-3 py-3 shadow-sm backdrop-blur">
+            <NavigationBar active={active} onSelect={onSelect} />
         </div>
     );
 }

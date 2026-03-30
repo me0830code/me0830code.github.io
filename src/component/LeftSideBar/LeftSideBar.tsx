@@ -13,7 +13,7 @@ export function LeftSideBar({
     onSelect: (key: SectionKey) => void;
 }) {
     return (
-        <aside className="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+        <aside className="rounded-[0.5rem] border border-slate-200 bg-white/80 p-6 shadow-sm">
             <ProfilePhoto />
             <ProfileInfo />
             <ContactInfo />

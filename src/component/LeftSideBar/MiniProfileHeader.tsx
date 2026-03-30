@@ -9,7 +9,7 @@ export function MiniProfileHeader() {
     const infoItems = TOTAL_INFO.filter((item) => !item.isLinkActive);
 
     return (
-        <div id="mini-profile-header" className="scroll-mt-24 rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
+        <div id="mini-profile-header" className="scroll-mt-24 rounded-[0.5rem] border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
             <div className="flex items-start gap-4">
                 <div className="h-[120px] w-[120px] shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 lg:h-[88px] lg:w-[88px]">
                     <img
@@ -25,22 +25,28 @@ export function MiniProfileHeader() {
                         {PERSONAL_INFO.MY_NAME}
                     </h2>
 
-                    <p className="mt-1 flex flex-wrap items-center gap-1 text-sm font-semibold text-sky-600">
-                        <span>{PERSONAL_INFO.CURRENT_TITLE} at</span>
+                    <div className="mt-1 text-sm font-semibold text-sky-600">
+                        <div className="sm:inline">
+                            {PERSONAL_INFO.CURRENT_TITLE}
+                        </div>
 
-                        <a
-                            href={COMPANY_INFO.COUPANG.companyLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center rounded-md px-1.5 py-0.5 transition-all duration-200 hover:bg-red-50"
-                        >
-                            <img
-                                src={COMPANY_INFO.COUPANG.logoURL}
-                                alt={COMPANY_INFO.COUPANG.companyName}
-                                className="h-[1.1em] w-auto object-contain translate-y-[1px]"
-                            />
-                        </a>
-                    </p>
+                        <div className="flex items-center gap-1 sm:inline-flex sm:ml-1">
+                            <span>at</span>
+
+                            <a
+                                href={COMPANY_INFO.COUPANG.companyLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center rounded-md px-0.5 py-1 mt-0.5 transition-all duration-200 hover:bg-red-50"
+                            >
+                                <img
+                                    src={COMPANY_INFO.COUPANG.logoURL}
+                                    alt={COMPANY_INFO.COUPANG.companyName}
+                                    className="h-[1.1em] w-auto object-contain translate-y-[1px]"
+                                />
+                            </a>
+                        </div>
+                    </div>
 
                     <p className="mt-2 text-sm leading-6 text-slate-700">
                         {CustomizedTextRendering(PERSONAL_INFO.BRIEF_INTRO)}

@@ -58,7 +58,7 @@ export function AppLayout() {
     return (
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
             <div className="px-4 py-4 sm:px-6 sm:py-6 lg:px-10 lg:py-8 2xl:px-14 2xl:py-10">
-                <div className="sticky top-0 z-30 -mx-1 mb-4 bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)] px-1 py-1 2xl:hidden">
+                <div className="sticky top-0 z-30 mb-4 pt-1 2xl:hidden">
                     <TopNavigatioBar active={active} onSelect={handleSelect} />
                 </div>
 

@@ -46,7 +46,7 @@ export function ProjectArea({ sectionTitle }: ComponentProps) {
 
     return (
         <div className="flex flex-col gap-6 md:gap-10">
-            <section className="relative rounded-[0.5rem] border border-slate-100 bg-white px-4 pt-20 pb-6 shadow-[0_10px_40px_rgba(0,0,0,0.03)] sm:px-6 sm:pt-24 sm:pb-8 md:px-5 md:pt-25 md:pb-5">
+            <section className="relative rounded-[0.5rem] border border-slate-100 bg-white px-4 pt-20 pb-6 shadow-sm backdrop-blur sm:px-6 sm:pt-24 sm:pb-8 md:px-5 md:pt-25 md:pb-5">
                 <div className="absolute top-0 left-0 flex h-11 w-44 items-center justify-center rounded-tl-[0.5rem] rounded-br-[0.5rem] bg-blue-500 px-4 py-2 sm:h-12 sm:w-52 sm:px-6 sm:py-2.5">
                     <span className="text-base font-bold leading-none tracking-tight text-white sm:text-[18px]">
                         {sectionTitle}

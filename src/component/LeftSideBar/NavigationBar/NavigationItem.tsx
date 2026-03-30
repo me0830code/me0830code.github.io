@@ -11,11 +11,11 @@ export const NavigationItem = forwardRef<HTMLButtonElement, NavigationItemInfo>(
                 onClick={() => onSelect(eachItem.key)}
                 className={`
                     group shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
-                    md:w-full md:shrink md:justify-center
-                    2xl:flex 2xl:w-full 2xl:items-center 2xl:justify-start 2xl:rounded-none 2xl:border-0 2xl:px-0 2xl:py-2 2xl:text-left
+                    md:flex md:min-h-[52px] md:w-full md:items-center md:justify-center
+                    2xl:min-h-0 2xl:w-full 2xl:justify-start 2xl:rounded-none 2xl:border-0 2xl:px-0 2xl:py-2 2xl:text-left
                     ${
                         isActive
-                            ? "border-sky-300 bg-sky-100 font-bold text-sky-700 shadow-sm 2xl:bg-transparent 2xl:shadow-none"
+                            ? "border-sky-300 bg-sky-50 font-bold text-sky-700 2xl:bg-transparent"
                             : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 2xl:bg-transparent"
                     }
                 `}
@@ -43,8 +43,9 @@ export function NavigationItem2({ eachItem, isActive, onSelect }: NavigationItem
         <button
             onClick={() => onSelect(eachItem.key)}
             className={`
-                group shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
-                md:flex md:w-full md:items-center md:rounded-none md:border-0 md:px-0 md:py-2 md:text-left
+                group min-h-[52px] shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
+                md:w-full md:shrink md:justify-center
+                2xl:flex 2xl:w-full 2xl:items-center 2xl:justify-start 2xl:rounded-none 2xl:border-0 2xl:px-0 2xl:py-2 2xl:text-left
                 ${
                     isActive
                         ? "border-sky-300 bg-sky-100 font-bold text-sky-700 shadow-sm md:bg-transparent md:shadow-none"

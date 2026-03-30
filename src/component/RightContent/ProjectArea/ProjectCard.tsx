@@ -19,13 +19,13 @@ export function ProjectCard({
             rel="noopener noreferrer"
             className="group relative flex flex-col gap-6 rounded-[0.5rem] border border-slate-100 bg-[#F8FAFC] p-5 transition-all duration-300 hover:bg-white hover:shadow-[0_25px_20px_-15px_rgba(0,0,0,0.1)] md:p-8 xl:flex-row xl:items-start xl:gap-8 xl:p-10"
         >
-            <div className="absolute top-0 right-0 rounded-tr-[0.5rem] rounded-bl-[0.5rem] border-l border-b border-slate-100 bg-white px-4 py-2 shadow-sm transition-all duration-300 group-hover:border-sky-600 group-hover:bg-sky-600 sm:px-5 sm:py-2.5 md:px-6">
+            <div className="absolute top-0 right-0 rounded-tr-[0.5rem] rounded-bl-[0.5rem] border-l border-b border-slate-100 bg-white px-3 py-1.5 shadow-sm transition-all duration-300 group-hover:border-sky-600 group-hover:bg-sky-600 sm:px-4 sm:py-2 md:px-6 md:py-2.5">
                 <span className="text-sm font-bold text-slate-400 group-hover:text-white sm:text-[16px]">
                     {projectTag}
                 </span>
             </div>
 
-            <div className="order-1 flex flex-col xl:order-2 xl:flex-none">
+            <div className="order-1 mt-10 flex flex-col xl:order-2 xl:mt-10 xl:flex-none">
                 <div className="mx-auto w-24 overflow-hidden rounded-[1.75rem] border border-slate-200/50 bg-white shadow-inner transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl sm:w-[110px]">
                     <div className="aspect-square">
                         <img
