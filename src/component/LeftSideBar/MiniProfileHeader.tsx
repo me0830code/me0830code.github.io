@@ -11,7 +11,7 @@ export function MiniProfileHeader() {
     return (
         <div id="mini-profile-header" className="scroll-mt-24 rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
             <div className="flex items-start gap-4">
-                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+                <div className="h-[120px] w-[120px] shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 lg:h-[88px] lg:w-[88px]">
                     <img
                         src={PERSONAL_PHOTO.PROFILE_PHOTO.imageURL}
                         alt={PERSONAL_PHOTO.PROFILE_PHOTO.name}

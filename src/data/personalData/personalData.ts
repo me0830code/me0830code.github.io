@@ -3,7 +3,7 @@ import type { ContactItem } from "./interface/ContactItem";
 import { LINKS } from "../constant/generalLink";
 
 export const PERSONAL_INFO = {
-    MY_NAME: "Chien-Yu Yeh",
+    MY_NAME: "Chien-Yu Yeh (Kevin)",
     MY_EN_NAME: "Kevin",
     CURRENT_TITLE: "Senior Backend Engineer",
     BRIEF_INTRO: "Currently leading **Cart and Checkout backend** services in a large-scale e-commerce system.",
@@ -28,10 +28,10 @@ export const PERSONAL_PHOTO = {
 export const TOTAL_MY_PHOTO = Object.values(PERSONAL_PHOTO.LIFE_PHOTO);
 
 export const CONTACT_INFO: ContactItem[] = [
-    { key: "whatsapp", value: "+886 937 532 865", iconURL: "logos:whatsapp-icon", isLinkActive: true, linkURL: LINKS.PHONE, customSize: "18" },
+    { key: "whatsapp", value: "+886937532865", iconURL: "logos:whatsapp-icon", isLinkActive: true, linkURL: LINKS.PHONE, customSize: "18" },
     { key: "email", value: "me0830code", iconURL: "logos:google-gmail", isLinkActive: true, linkURL: LINKS.GMAIL, customSize: "18" },
     { key: "github", value: "me0830code", iconURL: "logos:github-icon", isLinkActive: true, linkURL: LINKS.GITHUB, customSize: "18" },
-    { key: "linkedin", value: "Chien-Yu (Kevin) Yeh", iconURL: "logos:linkedin-icon", isLinkActive: true, linkURL: LINKS.LINKEDIN, customSize: "18" }, 
+    { key: "linkedin", value: "Chien-Yu Yeh", iconURL: "logos:linkedin-icon", isLinkActive: true, linkURL: LINKS.LINKEDIN, customSize: "18" }, 
 ] as const;
 
 export const TOTAL_INFO = Object.values(CONTACT_INFO);
