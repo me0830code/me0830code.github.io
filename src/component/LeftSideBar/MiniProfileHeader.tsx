@@ -37,7 +37,7 @@ export function MiniProfileHeader() {
                                 href={COMPANY_INFO.COUPANG.companyLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center rounded-md px-0.5 py-1 mt-0.5 transition-all duration-200 hover:bg-red-50"
+                                className="inline-flex items-center rounded-md py-1 mt-0.5 transition-all duration-200 hover:bg-red-50"
                             >
                                 <img
                                     src={COMPANY_INFO.COUPANG.logoURL}
