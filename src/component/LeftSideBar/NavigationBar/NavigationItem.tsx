@@ -11,15 +11,16 @@ export const NavigationItem = forwardRef<HTMLButtonElement, NavigationItemInfo>(
                 onClick={() => onSelect(eachItem.key)}
                 className={`
                     group shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
-                    xl:flex xl:w-full xl:items-center xl:rounded-none xl:border-0 xl:px-0 xl:py-2 xl:text-left
+                    md:w-full md:shrink md:justify-center
+                    2xl:flex 2xl:w-full 2xl:items-center 2xl:justify-start 2xl:rounded-none 2xl:border-0 2xl:px-0 2xl:py-2 2xl:text-left
                     ${
                         isActive
-                            ? "border-sky-300 bg-sky-100 font-bold text-sky-700 shadow-sm xl:bg-transparent xl:shadow-none"
-                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 xl:bg-transparent"
+                            ? "border-sky-300 bg-sky-100 font-bold text-sky-700 shadow-sm 2xl:bg-transparent 2xl:shadow-none"
+                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 2xl:bg-transparent"
                     }
                 `}
             >
-                <span className="hidden w-5 items-center justify-center xl:flex">
+                <span className="hidden w-5 items-center justify-center 2xl:flex">
                     <span
                         className={`transform transition-all duration-300 ${
                             isActive ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
@@ -29,7 +30,7 @@ export const NavigationItem = forwardRef<HTMLButtonElement, NavigationItemInfo>(
                     </span>
                 </span>
 
-                <span className="whitespace-nowrap text-sm">
+                <span className="truncate whitespace-nowrap text-sm">
                     {eachItem.sectionTitle}
                 </span>
             </button>

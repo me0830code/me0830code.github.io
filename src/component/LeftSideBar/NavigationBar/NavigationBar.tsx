@@ -17,27 +17,27 @@ export function NavigationBar({
     useEffect(() => {
         const navElement = navRef.current;
         const activeElement = itemRefs.current[active];
-
+    
         if (!navElement || !activeElement) return;
-
-        if (window.innerWidth >= 1280) return;
-
+    
+        if (window.innerWidth >= 768) return;
+    
         const navRect = navElement.getBoundingClientRect();
         const activeRect = activeElement.getBoundingClientRect();
-
+    
         const leftThreshold = navRect.left + 48;
         const rightThreshold = navRect.right - 48;
-
+    
         const isTooFarLeft = activeRect.left < leftThreshold;
         const isTooFarRight = activeRect.right > rightThreshold;
-
+    
         if (!isTooFarLeft && !isTooFarRight) return;
-
+    
         const targetScrollLeft =
             activeElement.offsetLeft -
             navElement.clientWidth / 2 +
             activeElement.clientWidth / 2;
-
+    
         navElement.scrollTo({
             left: Math.max(0, targetScrollLeft),
             behavior: "smooth",
@@ -47,7 +47,11 @@ export function NavigationBar({
     return (
         <nav
             ref={navRef}
-            className="hide-scrollbar flex w-full gap-2 overflow-x-auto whitespace-nowrap pb-1 xl:block xl:space-y-1 xl:overflow-visible xl:whitespace-normal xl:pb-0"
+            className="
+                hide-scrollbar flex w-full gap-2 overflow-x-auto whitespace-nowrap pb-1
+                md:grid md:grid-cols-4 md:gap-3 md:overflow-visible md:whitespace-normal md:pb-0
+                2xl:block 2xl:space-y-1
+            "
         >
             {TOTAL_SECTION.map((eachSection) => {
                 const isActive = eachSection.key === active;
