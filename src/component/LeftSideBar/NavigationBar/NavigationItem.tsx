@@ -12,15 +12,15 @@ export const NavigationItem = forwardRef<HTMLButtonElement, NavigationItemInfo>(
                 className={`
                     group shrink-0 rounded-full border px-4 py-2 text-sm transition-all duration-200
                     md:flex md:min-h-[52px] md:w-full md:items-center md:justify-center
-                    2xl:min-h-0 2xl:w-full 2xl:justify-start 2xl:rounded-none 2xl:border-0 2xl:px-0 2xl:py-2 2xl:text-left
+                    xl:min-h-0 xl:w-full xl:justify-start xl:rounded-none xl:border-0 xl:px-0 xl:py-2 xl:text-left
                     ${
                         isActive
-                            ? "border-sky-300 bg-sky-50 font-bold text-sky-700 2xl:bg-transparent"
-                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 2xl:bg-transparent"
+                            ? "border-sky-300 bg-sky-50 font-bold text-sky-700 xl:bg-transparent"
+                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900 xl:bg-transparent"
                     }
                 `}
             >
-                <span className="hidden w-5 items-center justify-center 2xl:flex">
+                <span className="hidden w-5 items-center justify-center xl:flex">
                     <span
                         className={`transform transition-all duration-300 ${
                             isActive ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"

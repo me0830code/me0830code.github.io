@@ -17,7 +17,7 @@ export function ProjectCard({
             href={projectLinkURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex flex-col gap-6 rounded-[0.5rem] border border-slate-100 bg-[#F8FAFC] p-5 transition-all duration-300 hover:bg-white hover:shadow-[0_25px_20px_-15px_rgba(0,0,0,0.1)] md:p-8 xl:flex-row xl:items-start xl:gap-8 xl:p-10"
+            className="group relative flex flex-col gap-6 rounded-[0.5rem] border border-slate-100 bg-[#F8FAFC] p-5 transition-all duration-300 hover:bg-white hover:shadow-[0_25px_20px_-15px_rgba(0,0,0,0.1)] md:p-8 min-[1440px]:flex-row min-[1440px]:items-start min-[1440px]:gap-8 min-[1440px]:p-10"
         >
             <div className="absolute top-0 right-0 rounded-tr-[0.5rem] rounded-bl-[0.5rem] border-l border-b border-slate-100 bg-white px-3 py-1.5 shadow-sm transition-all duration-300 group-hover:border-sky-600 group-hover:bg-sky-600 sm:px-4 sm:py-2 md:px-6 md:py-2.5">
                 <span className="text-sm font-bold text-slate-400 group-hover:text-white sm:text-[16px]">
@@ -25,7 +25,7 @@ export function ProjectCard({
                 </span>
             </div>
 
-            <div className="order-1 mt-10 flex flex-col xl:order-2 xl:mt-10 xl:flex-none">
+            <div className="order-1 mt-10 flex flex-col min-[1440px]:order-2 min-[1440px]:mt-10 min-[1440px]:flex-none">
                 <div className="mx-auto w-24 overflow-hidden rounded-[1.75rem] border border-slate-200/50 bg-white shadow-inner transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl sm:w-[110px]">
                     <div className="aspect-square">
                         <img
@@ -37,7 +37,7 @@ export function ProjectCard({
                 </div>
             </div>
 
-            <div className="order-2 flex min-w-0 flex-1 flex-col justify-start xl:order-1 xl:py-2">
+            <div className="order-2 flex min-w-0 flex-1 flex-col justify-start min-[1440px]:order-1 min-[1440px]:py-2">
                 <div>
                     <h4 className="pr-14 text-2xl font-bold tracking-tight text-black transition-colors group-hover:text-sky-600 sm:pr-20 sm:text-[24px]">
                         {projectName}
@@ -49,12 +49,12 @@ export function ProjectCard({
                         </span>
                     </div>
 
-                    <div className="flex flex-col gap-4 xl:flex-row xl:items-start">
+                    <div className="flex flex-col gap-4 min-[1440px]:flex-row min-[1440px]:items-start">
                         <div className="flex-1">
                             {projectDescription.map((eachDescription, index) => (
                                 <p
                                     key={index}
-                                    className="mr-0 text-[15px] leading-7 text-black sm:text-[16px] xl:mr-4"
+                                    className="mr-0 text-[15px] leading-7 text-black sm:text-[16px] min-[1440px]:mr-4"
                                 >
                                     {CustomizedTextRendering(eachDescription)}
                                 </p>

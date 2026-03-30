@@ -24,7 +24,7 @@ export function ProjectArea({ sectionTitle }: ComponentProps) {
         const updateItemsPerPage = () => {
             const width = window.innerWidth;
 
-            if (width >= 1280) {
+            if (width >= 1440) {
                 setItemsPerPage(4);
             } else if (width >= 768) {
                 setItemsPerPage(2);

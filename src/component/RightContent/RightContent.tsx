@@ -8,7 +8,7 @@ export function RightContent() {
                     <section
                         id={eachSection.key}
                         key={eachSection.key}
-                        className="scroll-mt-24 md:scroll-mt-8"
+                        className="scroll-mt-24 md:scroll-mt-36"
                     >
                         <eachSection.componentUI sectionTitle={eachSection.sectionTitle} />
                     </section>

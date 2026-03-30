@@ -49,8 +49,8 @@ export function NavigationBar({
             ref={navRef}
             className="
             hide-scrollbar flex w-full gap-2 overflow-x-auto whitespace-nowrap
-            md:grid md:grid-cols-4 md:gap-3 md:overflow-visible md:whitespace-normal
-            2xl:block 2xl:space-y-1
+            md:grid md:grid-cols-4 md:items-center md:gap-3 md:overflow-visible md:whitespace-normal
+            xl:block xl:space-y-1
         "
         >
             {TOTAL_SECTION.map((eachSection) => {
