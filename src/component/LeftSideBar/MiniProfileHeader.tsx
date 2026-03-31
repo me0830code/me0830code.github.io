@@ -59,7 +59,7 @@ export function MiniProfileHeader() {
                     {infoItems.map((eachInfo) => (
                         <div
                             key={eachInfo.key}
-                            className="flex items-center gap-2 text-sm text-slate-700"
+                            className="flex items-center gap-2 text-xs sm:text-sm text-slate-700"
                         >
                             <Icon
                                 icon={eachInfo.iconURL}
@@ -81,7 +81,7 @@ export function MiniProfileHeader() {
                             href={eachInfo.linkURL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-all duration-200 hover:border-slate-300 hover:text-sky-600"
+                            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-700 transition-all duration-200 hover:border-slate-300 hover:text-sky-600"
                         >
                             <Icon icon={eachInfo.iconURL} width={16} height={16} />
                             <span className="whitespace-nowrap">{eachInfo.value}</span>
