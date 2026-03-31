@@ -18,7 +18,7 @@ export function SkillBadge({
                 ${
                     needPrefixIcon
                         ? "gap-1.5 bg-white/80 border-slate-200 px-3 py-1.5 sm:gap-2 sm:px-4 sm:py-2"
-                        : "gap-1 bg-[#ffe6ec] border-slate-200 px-2.5 py-[6px] sm:px-3 sm:py-1"
+                        : "gap-1 bg-[#fff0de] border-slate-200 px-2.5 py-[6px] sm:px-3 sm:py-1"
                 }
                 ${
                     needHover
