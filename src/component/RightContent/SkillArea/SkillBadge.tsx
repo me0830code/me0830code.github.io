@@ -14,15 +14,17 @@ export function SkillBadge({
     return (
         <div
             className={`
-                group inline-flex items-center gap-1.5 rounded-[0.5rem] border px-3 py-1.5 text-sm
-                sm:gap-2 sm:px-4 sm:py-2
+                group inline-flex items-center rounded-[0.5rem] border text-sm
                 ${
                     needPrefixIcon
-                        ? "bg-white/80 border-slate-200"
-                        : "bg-[#ffe6ec] border-slate-200"
+                        ? "gap-1.5 bg-white/80 border-slate-200 px-3 py-1.5 sm:gap-2 sm:px-4 sm:py-2"
+                        : "gap-1 bg-[#ffe6ec] border-slate-200 px-2.5 py-[6px] sm:px-3 sm:py-1"
                 }
-                ${needPrefixIcon ? "px-3 py-1.5 sm:px-4 sm:py-2" : "px-2.5 py-1 sm:px-3 sm:py-1.5"}
-                ${needHover ? "cursor-default backdrop-blur-sm shadow-sm transition-all duration-300 hover:border-blue-400/50 hover:shadow-md" : "cursor-default"}
+                ${
+                    needHover
+                        ? "cursor-default backdrop-blur-sm shadow-sm transition-all duration-300 hover:border-blue-400/50 hover:shadow-md"
+                        : "cursor-default"
+                }
             `}
         >
             {needPrefixIcon ? (
@@ -45,7 +47,11 @@ export function SkillBadge({
             ) : null}
 
             <span
-                className={`whitespace-nowrap text-xs font-semibold sm:text-sm ${
+                className={`whitespace-nowrap font-semibold ${
+                    needPrefixIcon
+                        ? "text-xs sm:text-sm"
+                        : "text-xs sm:text-[13px]"
+                } ${
                     needHover
                         ? "text-slate-600 group-hover:text-slate-900"
                         : "text-black"
