@@ -2,7 +2,7 @@ import type { SectionKey } from "../data/constant/contentData";
 
 import { useState, useRef, useEffect } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
-import { TopNavigatioBar } from "../component/NavigationBar/TopAreaNavigationBar";
+import { TopAreaNavigationBar } from "../component/NavigationBar/TopAreaNavigationBar";
 import { RightContent } from "../component/RightContent/RightContent";
 import { CONTENT_SECTION } from "../data/constant/contentData";
 import { ProfileHeader } from "../component/ProfileHeader/ProfileHeader";
@@ -59,7 +59,7 @@ export function AppLayout() {
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
             <div className="px-4 py-4 sm:px-6 sm:py-6 lg:px-10 lg:py-8 xl:px-14 xl:py-10">
                 <div className="sticky top-0 z-30 mb-4 pt-1 xl:hidden">
-                    <TopNavigatioBar active={active} onSelect={handleSelect} />
+                    <TopAreaNavigationBar activeItemKey={active} onSelect={handleSelect} />
                 </div>
 
                 <div className="mb-4 xl:hidden">
@@ -69,7 +69,7 @@ export function AppLayout() {
                 <div className="grid grid-cols-1 gap-6 xl:grid-cols-12 xl:gap-10">
                     <aside className="hidden xl:block xl:col-span-3">
                         <div className="sticky top-8">
-                            <LeftSideBar active={active} onSelect={handleSelect} />
+                            <LeftSideBar activeItemKey={active} onSelect={handleSelect} />
                         </div>
                     </aside>
 

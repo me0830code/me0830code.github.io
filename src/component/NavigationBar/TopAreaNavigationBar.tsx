@@ -2,7 +2,7 @@ import type { NavigationBarInfo } from "../NavigationBar/interface/NavigationBar
 
 import { NormalNavigationBar } from "./NormalNavigationBar";
 
-export function TopNavigatioBar({activeItemKey, onSelect}: NavigationBarInfo) {
+export function TopAreaNavigationBar({activeItemKey, onSelect}: NavigationBarInfo) {
     return (
         <div className="rounded-[0.5rem] border border-slate-200/80 bg-white/85 px-3 py-3 shadow-sm backdrop-blur">
             <NormalNavigationBar activeItemKey={activeItemKey} onSelect={onSelect}/>
