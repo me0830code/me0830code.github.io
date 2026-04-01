@@ -54,9 +54,13 @@ export function ProjectArea({ sectionTitle }: ComponentProps) {
                 </div>
 
                 <div className="mb-3 flex items-center justify-end md:hidden">
-                    <span className="mb-2 text-sm font-medium tracking-wide text-black">
-                        Swipe to explore 👉
-                    </span>
+                    <div className="flex flex-row">
+                        <span className="mb-3 mr-1 text-sm font-bold tracking-wide text-[#ff3224]">
+                            Swipe to view more
+                        </span>
+
+                        <img src="customIcon/SwipeArrow.png" alt="SwipeArrow" className="h-5 w-5 object-contain"/>
+                    </div>
                 </div>
 
                 <div className="flex items-center">
