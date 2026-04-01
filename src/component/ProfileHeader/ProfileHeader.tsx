@@ -2,12 +2,13 @@ import { Icon } from "@iconify/react";
 
 import { CustomizedTextRendering } from "../Others/Helper";
 
+import { TOP_SECTION } from "../../data/constant/contentData";
 import { PERSONAL_INFO, PERSONAL_PHOTO, TOTAL_INFO } from "../../data/personalData/personalData";
 import { COMPANY_INFO } from "../../data/experienceInfo/companyInfo";
 
 export function ProfileHeader() {
     return (
-        <div id="mini-profile-header" className="scroll-mt-24 rounded-[0.5rem] border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
+        <div id={TOP_SECTION.ProfileHeader.key} className="scroll-mt-24 rounded-[0.5rem] border border-slate-200/80 bg-white/85 p-4 shadow-sm backdrop-blur">
             <div className="flex items-start gap-4">
                 <div className="h-[120px] w-[120px] shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 lg:h-[88px] lg:w-[88px]">
                     <img src={PERSONAL_PHOTO.PROFILE_PHOTO.imageURL} alt={PERSONAL_PHOTO.PROFILE_PHOTO.name} className="h-full w-full object-cover object-center" style={{ imageRendering: "auto" }}/>

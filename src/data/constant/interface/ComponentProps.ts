@@ -1,3 +1,3 @@
 export interface ComponentProps {
-    sectionTitle: string;
+    sectionTitle?: string;
 }

@@ -2,9 +2,8 @@ import type { SectionKey } from "../data/constant/contentData";
 
 import { useState, useRef, useEffect } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
-import { TopAreaNavigationBar } from "../component/NavigationBar/TopAreaNavigationBar";
 import { RightContent } from "../component/RightContent/RightContent";
-import { ProfileHeader } from "../component/ProfileHeader/ProfileHeader";
+import { TopAreaNavigationBar } from "../component/NavigationBar/TopAreaNavigationBar";
 
 import { BREAK_POINT } from "../data/constant/constant";
 import { TOP_SECTION, CONTENT_SECTION } from "../data/constant/contentData";
@@ -14,12 +13,13 @@ export function AppLayout() {
 
     const isManualScrolling = useRef(false);
 
+    const ProfileHeader = TOP_SECTION.ProfileHeader;
     const handleSelect = (key: SectionKey) => {
         isManualScrolling.current = true;
         setActive(key);
 
         const isTopNavLayout = window.innerWidth < BREAK_POINT.LAPTOP;
-        const targetId = (isTopNavLayout && key === CONTENT_SECTION.AboutMe.key) ? TOP_SECTION.ProfileHeader.key : key;
+        const targetId = (isTopNavLayout && key === CONTENT_SECTION.AboutMe.key) ? ProfileHeader.key : key;
         const element = document.getElementById(targetId);
         if (element) {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -59,7 +59,7 @@ export function AppLayout() {
                 </div>
 
                 <div className="mb-4 xl:hidden">
-                    <ProfileHeader/>
+                    <ProfileHeader.componentUI/>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 xl:grid-cols-12 xl:gap-10">

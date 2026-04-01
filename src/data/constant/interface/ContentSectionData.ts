@@ -1,4 +1,4 @@
-import type { ComponentProps } from "./ComponentProps"
+import type { ComponentProps } from "./ComponentProps";
 
 export interface ContentSectionData {
     key: string;
