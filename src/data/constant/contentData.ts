@@ -4,11 +4,9 @@ import { AboutMe } from "../../component/RightContent/AboutMe/AboutMe";
 import { ExperienceArea } from "../../component/RightContent/ExperienceArea";
 import { ProjectArea } from "../../component/RightContent/ProjectArea/ProjectArea";
 import { SkillArea } from "../../component/RightContent/SkillArea/SkillArea";
-import { TopAreaNavigationBar } from "../../component/NavigationBar/TopAreaNavigationBar";
 import { ProfileHeader } from "../../component/ProfileHeader/ProfileHeader";
 
 export const TOP_SECTION: Record<string, ContentSectionData> = {
-    TopAreaNavigationBar: { key: "TopNavigatioBar", sectionTitle: "TopAreaNavigationBar", componentUI: TopAreaNavigationBar},
     ProfileHeader: { key: "ProfileHeader", sectionTitle: "ProfileHeader", componentUI: ProfileHeader},
 }
 

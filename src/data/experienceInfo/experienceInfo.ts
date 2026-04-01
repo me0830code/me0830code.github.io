@@ -1,10 +1,11 @@
 import type { ExperienceData } from "./interface/ExperienceData";
 
-import { COMPANY_INFO } from "./companyInfo";
 import { dataBase } from "../skillSet/dataBase";
 import { frameworkLib } from "../skillSet/frameworkLib";
 import { otherTool } from "../skillSet/otherTool";
 import { programmingLanguage } from "../skillSet/programmingLanguage";
+
+import { COMPANY_INFO } from "./companyInfo";
 
 export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
     COUPANG: {
