@@ -2,10 +2,10 @@ import type { SectionKey } from "../data/constant/contentData";
 
 import { useState, useRef, useEffect } from "react";
 import { LeftSideBar } from "../component/LeftSideBar/LeftSideBar";
-import { TopNavigatioBar } from "../component/LeftSideBar/NavigationBar/TopNavigationBar";
+import { TopNavigatioBar } from "../component/NavigationBar/TopAreaNavigationBar";
 import { RightContent } from "../component/RightContent/RightContent";
 import { CONTENT_SECTION } from "../data/constant/contentData";
-import { MiniProfileHeader } from "../component/LeftSideBar/MiniProfileHeader";
+import { ProfileHeader } from "../component/ProfileHeader/ProfileHeader";
 
 export function AppLayout() {
     const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
@@ -63,7 +63,7 @@ export function AppLayout() {
                 </div>
 
                 <div className="mb-4 xl:hidden">
-                    <MiniProfileHeader />
+                    <ProfileHeader />
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 xl:grid-cols-12 xl:gap-10">

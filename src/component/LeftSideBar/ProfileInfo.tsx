@@ -1,6 +1,7 @@
+import { CustomizedTextRendering } from "../Others/Helper";
+
 import { PERSONAL_INFO } from "../../data/personalData/personalData";
 import { COMPANY_INFO } from "../../data/experienceInfo/companyInfo";
-import { CustomizedTextRendering } from "../Others/Helper";
 
 export function ProfileInfo() {
     return (
@@ -15,17 +16,8 @@ export function ProfileInfo() {
                 <span className="ml-0.5 inline-flex items-center gap-0.5">
                     <span>at</span>
 
-                    <a
-                        href={COMPANY_INFO.COUPANG.companyLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center rounded-md px-1 py-1 mt-0.5 transition-all duration-200 hover:bg-red-50 group"
-                    >
-                        <img
-                            src={COMPANY_INFO.COUPANG.logoURL}
-                            alt={COMPANY_INFO.COUPANG.companyName}
-                            className="h-[1.1em] w-auto object-contain translate-y-[1px] transition-transform group-hover:scale-105"
-                        />
+                    <a href={COMPANY_INFO.COUPANG.companyLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-md px-1 py-1 mt-0.5 transition-all duration-200 hover:bg-red-50 group">
+                        <img src={COMPANY_INFO.COUPANG.logoURL} alt={COMPANY_INFO.COUPANG.companyName} className="h-[1.1em] w-auto object-contain translate-y-[1px] transition-transform group-hover:scale-105"/>
                     </a>
                 </span>
             </p>

@@ -28,10 +28,10 @@ export const PERSONAL_PHOTO = {
 export const TOTAL_MY_PHOTO = Object.values(PERSONAL_PHOTO.LIFE_PHOTO);
 
 export const CONTACT_INFO: ContactItem[] = [
-    { key: "whatsapp", value: "+886937532865", iconURL: "logos:whatsapp-icon", isLinkActive: true, linkURL: LINKS.PHONE, customSize: "18" },
-    { key: "email", value: "me0830code", iconURL: "logos:google-gmail", isLinkActive: true, linkURL: LINKS.GMAIL, customSize: "18" },
-    { key: "github", value: "me0830code", iconURL: "logos:github-icon", isLinkActive: true, linkURL: LINKS.GITHUB, customSize: "18" },
-    { key: "linkedin", value: "Chien-Yu Yeh", iconURL: "logos:linkedin-icon", isLinkActive: true, linkURL: LINKS.LINKEDIN, customSize: "18" }, 
+    { key: "whatsapp", value: "+886937532865", iconURL: "logos:whatsapp-icon", linkURL: LINKS.PHONE, customSize: "18" },
+    { key: "email", value: "me0830code", iconURL: "logos:google-gmail", linkURL: LINKS.GMAIL, customSize: "18" },
+    { key: "github", value: "me0830code", iconURL: "logos:github-icon", linkURL: LINKS.GITHUB, customSize: "18" },
+    { key: "linkedin", value: "Chien-Yu Yeh", iconURL: "logos:linkedin-icon", linkURL: LINKS.LINKEDIN, customSize: "18" }, 
 ] as const;
 
 export const TOTAL_INFO = Object.values(CONTACT_INFO);

@@ -1,4 +1,4 @@
-import type { SectionKey } from "../../../../data/constant/contentData";
+import type { SectionKey } from "../../../data/constant/contentData";
 
 export interface NavigationItemInfo {
     eachItem: { key: SectionKey; sectionTitle: string };
