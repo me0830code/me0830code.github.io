@@ -12,44 +12,90 @@ export function AppLayout() {
     const [active, setActive] = useState<SectionKey>(CONTENT_SECTION.AboutMe.key);
 
     const isManualScrolling = useRef(false);
+    const pendingTargetKey = useRef<SectionKey | null>(null);
 
     const ProfileHeader = TOP_SECTION.ProfileHeader;
+
     const handleSelect = (key: SectionKey) => {
         isManualScrolling.current = true;
+        pendingTargetKey.current = key;
         setActive(key);
 
-        const isTopNavLayout = window.innerWidth < BREAK_POINT.LAPTOP;
-        const targetId = (isTopNavLayout && key === CONTENT_SECTION.AboutMe.key) ? ProfileHeader.key : key;
+        const needToShowTopNavigationBar = window.innerWidth < BREAK_POINT.LAPTOP;
+        const targetId = (needToShowTopNavigationBar && key === CONTENT_SECTION.AboutMe.key) ? ProfileHeader.key : key;
+
         const element = document.getElementById(targetId);
         if (element) {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-
-        setTimeout(() => {
-            isManualScrolling.current = false;
-        }, 1000);
     };
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && !isManualScrolling.current) {
-                        setActive(entry.target.id as SectionKey);
+        const getSections = () => Array.from(document.querySelectorAll("section[id]")) as HTMLElement[];
+
+        const updateActiveSection = () => {
+            const sections = getSections();
+            if (sections.length === 0) return;
+
+            const isDesktop = window.innerWidth >= BREAK_POINT.LAPTOP;
+            const activationLine = isDesktop ? 140 : 120;
+            const activationTolerance = 28;
+
+            if (isManualScrolling.current && pendingTargetKey.current) {
+                const needToShowTopNavigationBar = window.innerWidth < BREAK_POINT.LAPTOP;
+                const targetId = (needToShowTopNavigationBar && pendingTargetKey.current === CONTENT_SECTION.AboutMe.key) ? ProfileHeader.key : pendingTargetKey.current;
+
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const rect = targetElement.getBoundingClientRect();
+
+                    if (Math.abs(rect.top - activationLine) <= activationTolerance) {
+                        isManualScrolling.current = false;
+                        pendingTargetKey.current = null;
+                
+                        if (targetId === ProfileHeader.key) {
+                            setActive(CONTENT_SECTION.AboutMe.key);
+                        } else {
+                            setActive(targetId as SectionKey);
+                        }
+                    } else {
+                        setActive(pendingTargetKey.current);
                     }
-                });
-            },
-            {
-                rootMargin: "0px 0px -80% 0px",
-                threshold: 0,
+                }
+
+                return;
             }
-        );
 
-        const sections = document.querySelectorAll("section[id]");
-        sections.forEach((section) => observer.observe(section));
+            const candidates = sections.map((section) => (
+                {
+                    id: section.id as SectionKey,
+                    top: section.getBoundingClientRect().top,
+                }
+            )).filter((section) => section.top <= activationLine + activationTolerance);
 
-        return () => observer.disconnect();
-    }, []);
+            if (candidates.length === 0) {
+                setActive(sections[0].id as SectionKey);
+                return;
+            }
+
+            const current = candidates[candidates.length - 1];
+            setActive(current.id);
+        };
+
+        const handleScroll = () => {
+            updateActiveSection();
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("resize", updateActiveSection);
+
+        updateActiveSection();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", updateActiveSection);
+        };
+    }, [ProfileHeader.key]);
 
     return (
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_#f8fbff,_#eef5fb)]">
