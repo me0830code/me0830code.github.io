@@ -4,8 +4,6 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 export const infraObserveInfo: SkillSectionData = {
     name: "Infra & Observability",
     iconURL: "fluent:cloud-cube-24-regular",
-    textColor: "text-blue-600",
-    backgroundColor: "text-purple-600",
 } as const;
 
 export const infraObserve: Record<string, SkillSetItem> = {
