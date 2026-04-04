@@ -3,9 +3,9 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const dataBaseSearchInfo: SkillSectionData = {
     name: "Databases & Search",
-    iconURL: "fluent-color:database-24",
-    textColor: "text-blue-600",
-    backgroundColor: "text-purple-600",
+    iconURL: "fluent:task-list-square-database-24-regular",
+    textColor: "text-[#278eba]",
+    backgroundColor: "bg-sky-600",
 } as const;
 
 export const dataBaseSearch: Record<string, SkillSetItem> = {

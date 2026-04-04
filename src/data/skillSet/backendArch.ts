@@ -3,9 +3,9 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const backendArchInfo: SkillSectionData = {
     name: "Backend Architecture",
-    iconURL: "fluent-color:org-24",
-    textColor: "text-blue-600",
-    backgroundColor: "text-purple-600",
+    iconURL: "fluent:server-link-24-regular",
+    textColor: "text-[#278eba]",
+    backgroundColor: "text-[#278eba]",
 } as const;
 
 export const backendArch: Record<string, SkillSetItem> = {

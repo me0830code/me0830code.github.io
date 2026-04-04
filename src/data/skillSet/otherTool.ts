@@ -3,9 +3,9 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const otherToolInfo: SkillSectionData = {
     name: "Tools",
-    iconURL: "fluent-color:wrench-24",
-    textColor: "text-blue-600",
-    backgroundColor: "text-purple-600",
+    iconURL: "fluent:window-dev-tools-24-regular",
+    textColor: "text-[#278eba]",
+    backgroundColor: "text-[#278eba]",
 } as const;
 
 export const otherTool: Record<string, SkillSetItem> = {

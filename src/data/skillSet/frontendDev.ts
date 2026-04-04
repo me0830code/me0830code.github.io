@@ -3,7 +3,7 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const frontendDevInfo: SkillSectionData = {
     name: "Frontend Development",
-    iconURL: "fluent-color:text-bullet-list-square-24",
+    iconURL: "fluent:phone-desktop-24-regular",
     textColor: "text-blue-600",
     backgroundColor: "text-purple-600",
 } as const;

@@ -20,7 +20,7 @@ export function SkillArea({ sectionTitle }: ComponentProps) {
                         <div key={eachCategory.name}>
                             <div className="space-y-6">
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className={`p-2.5 ${eachCategory.backgroundColor} rounded-xl ${eachCategory.textColor}`}>
+                                    <div className={`p-2.5 rounded-xl text-[#0b47de]`}>
                                         <Icon icon={eachCategory.iconURL} className="w-8 h-8"/>
                                     </div>
 

@@ -3,9 +3,9 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const programmingLanguageInfo: SkillSectionData = {
     name: "Programming Languages",
-    iconURL: "fluent-color:code-block-32",
-    textColor: "text-blue-600",
-    backgroundColor: "text-purple-600",
+    iconURL: "fluent:code-24-regular",
+    textColor: "text-[#278eba]",
+    backgroundColor: "text-[#278eba]",
 } as const;
 
 export const programmingLanguage: Record<string, SkillSetItem> = {
