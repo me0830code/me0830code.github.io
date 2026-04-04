@@ -9,9 +9,9 @@ export function SkillBadge({eachSkillSetItem, needPrefixIcon = true, needHover =
             {
                 needPrefixIcon ? (
                     eachSkillSetItem.needToCustomize ? (
-                        <img src={eachSkillSetItem.iconURL} alt={eachSkillSetItem.name} className="h-4 w-4 object-contain sm:h-5 sm:w-5"/>
+                        <img src={eachSkillSetItem.iconURL} alt={eachSkillSetItem.name} className="h-4 w-4 object-contain sm:h-5 sm:w-5 rounded-[0.2rem]"/>
                     ) : (
-                        <Icon icon={eachSkillSetItem.iconURL} className={`h-4 w-4 text-slate-400 sm:h-5 sm:w-5 ${needHover ? "transition-colors duration-300 group-hover:text-slate-600" : ""}`}/>
+                        <Icon icon={eachSkillSetItem.iconURL} className={`rounded-[0.2rem] h-4 w-4 text-slate-400 sm:h-5 sm:w-5 ${needHover ? "transition-colors duration-300 group-hover:text-slate-600" : ""}`}/>
                     )
                 ) : null
             }

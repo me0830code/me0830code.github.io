@@ -12,11 +12,8 @@ export const infraObserve: Record<string, SkillSetItem> = {
     AWS: { name: "AWS", iconURL: "skill-icons:aws-light", needToCustomize: false },
     DOCKER: { name: "Docker", iconURL: "skill-icons:docker", needToCustomize: false },
     KUBERNETES: { name: "K8s", iconURL: "skill-icons:kubernetes", needToCustomize: false },
-
-    CI_CD: { name: "CI/CD", iconURL: "skill-icons:jenkins-light", needToCustomize: false },
-
+    CI_CD: { name: "CI / CD", iconURL: "customIcon/CICD.png", needToCustomize: true },
     JENKINS: { name: "Jenkins", iconURL: "skill-icons:jenkins-light", needToCustomize: false },
     GRAFANA: { name: "Grafana", iconURL: "skill-icons:grafana-light", needToCustomize: false },
-
-    PROMETHEUS: { name: "Prometheus", iconURL: "skill-icons:grafana-light", needToCustomize: false },
+    PROMETHEUS: { name: "Prometheus", iconURL: "skill-icons:prometheus", needToCustomize: false },
 } as const;
