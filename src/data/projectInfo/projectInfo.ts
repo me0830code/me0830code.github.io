@@ -23,11 +23,11 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectSkillSet: [
             programmingLanguage.JAVA,
             backendArch.SPRING_BOOT,
-            infraObserve.JENKINS,
             infraObserve.DOCKER,
-            // dataBase.MY_SQL,
-            // dataBase.REDIS,
-            // otherTool.GRAFANA
+            infraObserve.KUBERNETES,
+            infraObserve.JENKINS,
+            infraObserve.GRAFANA,
+            dataBaseSearch.MY_SQL,
         ],
         projectTag: projectType.MOBILE_APP_AND_WEB
     },
@@ -42,6 +42,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectSkillSet: [
             programmingLanguage.TYPE_SCRIPT,
             frontendDev.REACT,
+            frontendDev.TAILWIND_CSS,
             otherSkill.GITHUB_ACTION,
         ],
         projectTag: projectType.WEB
@@ -57,6 +58,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectSkillSet: [
             programmingLanguage.PYTHON,
             dataBaseSearch.MONGO_DB,
+            otherSkill.CRAWLER,
             otherSkill.SCHEDULER,
         ],
         projectTag: projectType.CRAWLER
@@ -71,9 +73,10 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.BASEBALL_DETECTION,
         projectSkillSet: [
             programmingLanguage.PYTHON,
-            otherSkill.FLASK,
             infraObserve.DOCKER,
             infraObserve.AWS,
+            otherSkill.FLASK,
+            backendArch.RESTFUL_API
         ],
         projectTag: projectType.AI_ML
     },
@@ -120,7 +123,7 @@ export const PROJECT_INFO: ProjectItem[] = [
             programmingLanguage.PYTHON,
             otherSkill.FAST_API,
             dataBaseSearch.MONGO_DB,
-            // otherTool.DOCKER,
+            infraObserve.DOCKER,
             infraObserve.JENKINS,
         ],
         projectTag: projectType.WEB

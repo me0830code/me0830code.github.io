@@ -1,12 +1,13 @@
 import type { SkillSetItem } from "./interface/SkillSetItem";
 
 export const otherSkill: Record<string, SkillSetItem> = {
+    CRAWLER: { name: "Crawler", iconURL: "fluent-emoji-flat:robot", needToCustomize: false},
     SCHEDULER: { name: "Scheduler", iconURL: "twemoji:alarm-clock", needToCustomize: false},
-    BLUETOOTH: { name: "Bluetooth", iconURL: "logos:bluetooth", needToCustomize: false},
+    BLUETOOTH: { name: "BLE", iconURL: "logos:bluetooth", needToCustomize: false},
     EMBEDDED: { name: "Embedded", iconURL: "customIcon/Embedded.png", needToCustomize: true},
 
     OBJ_C: { name: "Object-C", iconURL: "logos:apple", needToCustomize: false },
-    
+
     CORE_DATA: { name: "Core Data", iconURL: "flat-color-icons:data-sheet", needToCustomize: false},
     NO_SQL: { name: "NoSQL", iconURL: "material-icon-theme:json", needToCustomize: false },
     SQL_LITE: { name: "SQLite", iconURL: "devicon:sqlite", needToCustomize: false },
