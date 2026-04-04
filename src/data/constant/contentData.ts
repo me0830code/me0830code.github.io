@@ -13,7 +13,7 @@ export const TOP_SECTION: Record<string, ContentSectionData> = {
 export const CONTENT_SECTION: Record<string, ContentSectionData> = {
     AboutMe: { key: "AboutMe", sectionTitle: "Hello World 😊", componentUI: AboutMe},
     WorkExperience: { key: "WorkExperience", sectionTitle: "Work Experience", componentUI: ExperienceArea},
-    SideProject: { key: "SideProject", sectionTitle: "Selected Projects", componentUI: ProjectArea},
+    SideProject: { key: "SideProject", sectionTitle: "Highlight Projects", componentUI: ProjectArea},
     Skills: { key: "Skills", sectionTitle: "Technical Skills", componentUI: SkillArea}
 } as const;
 

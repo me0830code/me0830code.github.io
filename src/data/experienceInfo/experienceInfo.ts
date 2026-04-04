@@ -38,7 +38,7 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 jobWorkSummary: [
                     "- Optimized embedded software for the **Dynamic Voltage and Frequency Scaling (DVFS)** module across smartphone, tablet, and telematics SoCs, delivering high-performance solutions for global clients including **OPPO, Apple, Google, and NVIDIA**.",
                     "- Engineered a **high-performance logging parser** using C++ and the Qt framework to analyze root causes via historical syndromes and incidents, **reducing debugging time by 20%+** for cross-functional module teams.",
-                    "- Architected an **automated SoC integration testing framework** using Python and Jenkins, streamlining image flashing and UXM equipment control via RESTful APIs to **increase equipment utilization by 30%+**."
+                    "- Architected an **automated SoC integration testing framework** using Python and Jenkins, automating image flashing and UXM equipment control via RESTful APIs to **increase equipment utilization by 30%+**."
                 ],
                 jobSkillSet: [
                     programmingLanguage.C,
@@ -56,7 +56,6 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 jobDuration: "Sep 2021 - Mar 2022",
                 jobWorkSummary: [
                     "- Refined the SSD Garbage Collection (GC) module using C to enhance NAND endurance and performance stability, delivering high-reliability solutions for industry leaders including **Micron, SK Hynix, and Kioxia**.",
-                    "- Developed comprehensive stress tests to profile system performance and validate firmware reliability under diverse high-load scenarios for enterprise-grade SoCs."
                 ],
                 jobSkillSet: [
                     programmingLanguage.C,

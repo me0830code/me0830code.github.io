@@ -16,7 +16,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Coupang",
         projectYear: "Active",
         projectDescription: [
-            "Drove key backend features across Coupang’s **cart** and **checkout** systems, contributing to **1.2M** new premium members."
+            "Drove key backend features for Cart & Checkout, contributing to **1.2M+ new paid members** and **2K+ daily new buyers**."
         ],
         projectPreviewImageURL: "projectPreview/Coupang.png",
         projectLinkURL: PROJECT_LINK.COUPANG,
@@ -35,7 +35,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "My Website",
         projectYear: "Dev in 2026",
         projectDescription: [
-            "Built a personal portfolio website to showcase my experience, projects, and technical skills."
+            "Built a personal portfolio website to showcase my experience, projects, and technical skills.",
         ],
         projectPreviewImageURL: "projectPreview/My_Website.png",
         projectLinkURL: PROJECT_LINK.MY_WEBSITE,
@@ -50,7 +50,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "AE Job Radar",
         projectYear: "Dev in 2025",
         projectDescription: [
-            "Architected an adapter-based **job crawle**r to automate visa-eligible role identification by cross-referencing SEEK software openings with the Immigration **New Zealand Accredited Employer** List."
+            "Architected an **adapter-based job crawler** to automate visa-eligible role identification by cross-referencing SEEK software openings with the Immigration New Zealand Accredited Employer List."
         ],
         projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
         projectLinkURL: PROJECT_LINK.AE_JOB_RADAR,
@@ -65,7 +65,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Baseball Detection",
         projectYear: "Dev in 2021",
         projectDescription: [
-            "Engineered a baseball trajectory analysis system by training and tuning **Fast-Moving-Object** detection models and deploying scalable REST APIs on AWS.",
+            "Engineered a baseball trajectory analysis system by **training and tuning Fast-Moving-Object (FMO) detection models** and deploying scalable RESTful APIs on AWS (EC2, S3, Lambda).",
         ],
         projectPreviewImageURL: "projectPreview/Baseball_Detection.png",
         projectLinkURL: PROJECT_LINK.BASEBALL_DETECTION,
@@ -81,7 +81,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Always Baseball",
         projectYear: "Dev in 2021",
         projectDescription: [
-            "Created an iOS app for real-time baseball game updates using Swift and Firebase.",
+            "Created an iOS app for real-time baseball game updates using Swift and Firebase for live data synchronization.",
         ],
         projectPreviewImageURL: "projectPreview/Always_Baseball.png",
         projectLinkURL: PROJECT_LINK.ALWAYS_BASEBALL,
@@ -95,7 +95,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "NCKU Library",
         projectYear: "Dev in 2021",
         projectDescription: [
-            "Built and launched the library iOS app from 0 to 1, reaching **1.2K** downloads.",
+            "Built and launched the library iOS app from 0 to 1, achieving **1.2K downloads**.",
         ],
         projectPreviewImageURL: "projectPreview/NCKU_Library.png",
         projectLinkURL: PROJECT_LINK.NCKU_LIBRARY,
@@ -111,7 +111,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "One Piece",
         projectYear: "Dev in 2020",
         projectDescription: [
-            "Built a full-stack news website with Vue and FastAPI, streamlining delivery through CI/CD automation.",
+            "Built a **full-stack** news website with Vue, FastAPI, and MongoDB, automating delivery via Jenkins.",
         ],
         projectPreviewImageURL: "projectPreview/One_Piece.png",
         projectLinkURL: PROJECT_LINK.ONE_PIECE,
@@ -121,7 +121,7 @@ export const PROJECT_INFO: ProjectItem[] = [
             otherSkill.FAST_API,
             dataBaseSearch.MONGO_DB,
             // otherTool.DOCKER,
-            // otherTool.JENKINS,
+            infraObserve.JENKINS,
         ],
         projectTag: projectType.WEB
     },
@@ -129,7 +129,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Oivita",
         projectYear: "Dev in 2020",
         projectDescription: [
-            "Built an Apple Watch IoT app using **BLE** to control devices and collect sensor data for health analytics.",
+            "Developed an Apple Watch **IoT** app using **BLE** to control devices and collect sensor data for health analytics.",
         ],
         projectPreviewImageURL: "projectPreview/Oivita.png",
         projectLinkURL: PROJECT_LINK.OIVITA,
@@ -144,7 +144,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Tweeter",
         projectYear: "Dev in 2019",
         projectDescription: [
-            "Built a simple Twitter-like timeline app to practice MVVM design patterns"
+            "Built a Twitter-like social timeline to master MVVM architecture."
         ],
         projectPreviewImageURL: "projectPreview/Twetter.png",
         projectLinkURL: PROJECT_LINK.TWEETER,
@@ -158,7 +158,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "TelephoneBook",
         projectYear: "Dev in 2019",
         projectDescription: [
-            "Served as a **teaching assistant** for an Android development course at National Cheng Kung University, mentoring students in app development."
+            "Served as an **Android Development TA** at National Cheng Kung University, mentoring students in app development."
         ],
         projectPreviewImageURL: "projectPreview/TelephoneBook.png",
         projectLinkURL: PROJECT_LINK.TELEPHONE_BOOK,
@@ -173,7 +173,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Smashtag",
         projectYear: "Dev in 2017",
         projectDescription: [
-            "Built an iOS app as a Stanford CS193P practice project using Twitter data to learn MVC design patterns and Core Data."
+            "Built an iOS app as a Stanford CS193P practice project, using Twitter data to master MVC architecture and Core Data.",
         ],
         projectPreviewImageURL: "projectPreview/Smashtag.png",
         projectLinkURL: PROJECT_LINK.SMASH_TAG,
@@ -188,7 +188,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Furkids",
         projectYear: "Dev in 2017",
         projectDescription: [
-            "Engineered a real-time data pipeline for animal-shelter data, powering a connected iOS app that reached **1.6K** downloads."
+            "Engineered a real-time animal shelter data pipeline, powering an iOS app that achieved **1.6K+ downloads**."
         ],
         projectPreviewImageURL: "projectPreview/Furkids.png",
         projectLinkURL: PROJECT_LINK.FURKIDS,
