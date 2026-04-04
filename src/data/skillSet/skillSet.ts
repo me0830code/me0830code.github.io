@@ -1,9 +1,11 @@
 import type { SkillItem } from "./interface/SkillItem";
 
-import { dataBaseInfo, dataBase } from "./dataBase";
-import { frameworkLibInfo, frameworkLib } from "./frameworkLib";
-import { otherToolInfo, otherTool } from "./otherTool";
 import { programmingLanguageInfo, programmingLanguage } from "./programmingLanguage";
+import { backendArchInfo, backendArch } from "./backendArch";
+import { frontendDevInfo, frontendDev } from "./frontendDev";
+import { dataBaseSearchInfo, dataBaseSearch } from "./dataBaseSearch";
+import { infraObserveInfo, infraObserve } from "./infraObserve";
+import { otherToolInfo, otherTool } from "./otherTool";
 
 export const MY_SKILL: SkillItem[] = [
     {
@@ -14,18 +16,32 @@ export const MY_SKILL: SkillItem[] = [
         skillSetItem: programmingLanguage
     },
     {
-        name: dataBaseInfo.name,
-        iconURL: dataBaseInfo.iconURL,
-        textColor: dataBaseInfo.textColor,
-        backgroundColor: dataBaseInfo.backgroundColor,
-        skillSetItem: dataBase
+        name: backendArchInfo.name,
+        iconURL: backendArchInfo.iconURL,
+        textColor: backendArchInfo.textColor,
+        backgroundColor: backendArchInfo.backgroundColor,
+        skillSetItem: backendArch
     },
     {
-        name: frameworkLibInfo.name,
-        iconURL: frameworkLibInfo.iconURL,
-        textColor: frameworkLibInfo.textColor,
-        backgroundColor: frameworkLibInfo.backgroundColor,
-        skillSetItem: frameworkLib
+        name: frontendDevInfo.name,
+        iconURL: frontendDevInfo.iconURL,
+        textColor: frontendDevInfo.textColor,
+        backgroundColor: frontendDevInfo.backgroundColor,
+        skillSetItem: frontendDev
+    },
+    {
+        name: dataBaseSearchInfo.name,
+        iconURL: dataBaseSearchInfo.iconURL,
+        textColor: dataBaseSearchInfo.textColor,
+        backgroundColor: dataBaseSearchInfo.backgroundColor,
+        skillSetItem: dataBaseSearch
+    },
+    {
+        name: infraObserveInfo.name,
+        iconURL: infraObserveInfo.iconURL,
+        textColor: infraObserveInfo.textColor,
+        backgroundColor: infraObserveInfo.backgroundColor,
+        skillSetItem: infraObserve
     },
     {
         name: otherToolInfo.name,

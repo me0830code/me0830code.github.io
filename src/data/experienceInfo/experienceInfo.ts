@@ -1,9 +1,11 @@
 import type { ExperienceData } from "./interface/ExperienceData";
 
-import { dataBase } from "../skillSet/dataBase";
-import { frameworkLib } from "../skillSet/frameworkLib";
-import { otherTool } from "../skillSet/otherTool";
 import { programmingLanguage } from "../skillSet/programmingLanguage";
+import { backendArch } from "../skillSet/backendArch";
+import { dataBaseSearch } from "../skillSet/dataBaseSearch";
+import { infraObserve } from "../skillSet/infraObserve";
+import { otherTool } from "../skillSet/otherTool";
+import { otherSkill } from "../skillSet/otherSkill";
 
 import { COMPANY_INFO } from "./companyInfo";
 
@@ -20,12 +22,12 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 ],
                 jobSkillSet: [
                     programmingLanguage.JAVA,
-                    frameworkLib.SPRING_BOOT,
-                    otherTool.JENKINS,
-                    otherTool.DOCKER,
-                    dataBase.MY_SQL,
-                    dataBase.REDIS,
-                    otherTool.GRAFANA
+                    backendArch.SPRING_BOOT,
+                    infraObserve.JENKINS,
+                    infraObserve.DOCKER,
+                    dataBaseSearch.MY_SQL,
+                    dataBaseSearch.REDIS,
+                    infraObserve.GRAFANA
                 ]
             },
     MEDIATEK: {
@@ -41,10 +43,10 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                     programmingLanguage.C,
                     programmingLanguage.C_PLUS_PLUS,
                     programmingLanguage.PYTHON,
-                    frameworkLib.FLASK,
-                    frameworkLib.QT,
-                    dataBase.MY_SQL,
-                    otherTool.JENKINS
+                    otherSkill.FLASK,
+                    otherTool.QT,
+                    dataBaseSearch.MY_SQL,
+                    infraObserve.JENKINS
                 ]
             },
     PHISON: {
@@ -56,7 +58,7 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 ],
                 jobSkillSet: [
                     programmingLanguage.C,
-                    otherTool.JENKINS
+                    infraObserve.JENKINS
                 ]
             },
 } as const;

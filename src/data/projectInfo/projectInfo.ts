@@ -1,11 +1,13 @@
 import type { ProjectItem } from "./interface/ProjectItem";
 
 import { projectType } from "./projectType";
-import { dataBase } from "../skillSet/dataBase";
-import { frameworkLib } from "../skillSet/frameworkLib";
+import { programmingLanguage } from "../skillSet/programmingLanguage";
+import { backendArch } from "../skillSet/backendArch";
+import { frontendDev } from "../skillSet/frontendDev";
+import { dataBaseSearch } from "../skillSet/dataBaseSearch";
+import { infraObserve } from "../skillSet/infraObserve";
 import { otherTool } from "../skillSet/otherTool";
 import { otherSkill } from "../skillSet/otherSkill";
-import { programmingLanguage } from "../skillSet/programmingLanguage";
 
 import { PROJECT_LINK } from "../constant/generalLink";
 
@@ -20,9 +22,9 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.COUPANG,
         projectSkillSet: [
             programmingLanguage.JAVA,
-            frameworkLib.SPRING_BOOT,
-            otherTool.JENKINS,
-            otherTool.DOCKER,
+            backendArch.SPRING_BOOT,
+            infraObserve.JENKINS,
+            infraObserve.DOCKER,
             // dataBase.MY_SQL,
             // dataBase.REDIS,
             // otherTool.GRAFANA
@@ -39,8 +41,8 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.MY_WEBSITE,
         projectSkillSet: [
             programmingLanguage.TYPE_SCRIPT,
-            frameworkLib.REACT,
-            otherTool.GITHUB_ACTION,
+            frontendDev.REACT,
+            otherSkill.GITHUB_ACTION,
         ],
         projectTag: projectType.WEB
     },
@@ -54,7 +56,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.AE_JOB_RADAR,
         projectSkillSet: [
             programmingLanguage.PYTHON,
-            dataBase.MONGO_DB,
+            dataBaseSearch.MONGO_DB,
             otherSkill.SCHEDULER,
         ],
         projectTag: projectType.CRAWLER
@@ -69,9 +71,9 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.BASEBALL_DETECTION,
         projectSkillSet: [
             programmingLanguage.PYTHON,
-            frameworkLib.FLASK,
-            otherTool.DOCKER,
-            otherTool.AWS,
+            otherSkill.FLASK,
+            infraObserve.DOCKER,
+            infraObserve.AWS,
         ],
         projectTag: projectType.AI_ML
     },
@@ -85,7 +87,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.ALWAYS_BASEBALL,
         projectSkillSet: [
             programmingLanguage.SWIFT,
-            dataBase.FIREBASE,
+            dataBaseSearch.FIREBASE,
         ],
         projectTag: projectType.MOBILE_APP
     },
@@ -100,8 +102,8 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectSkillSet: [
             programmingLanguage.SWIFT,
             programmingLanguage.JAVA,
-            frameworkLib.SPRING_BOOT,
-            dataBase.MY_SQL,
+            backendArch.SPRING_BOOT,
+            dataBaseSearch.MY_SQL,
         ],
         projectTag: projectType.MOBILE_APP
     },
@@ -114,10 +116,10 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectPreviewImageURL: "projectPreview/One_Piece.png",
         projectLinkURL: PROJECT_LINK.ONE_PIECE,
         projectSkillSet: [
-            frameworkLib.VUE,
+            frontendDev.VUE,
             programmingLanguage.PYTHON,
-            frameworkLib.FAST_API,
-            dataBase.MONGO_DB,
+            otherSkill.FAST_API,
+            dataBaseSearch.MONGO_DB,
             // otherTool.DOCKER,
             // otherTool.JENKINS,
         ],
@@ -148,7 +150,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.TWEETER,
         projectSkillSet: [
             programmingLanguage.SWIFT,
-            dataBase.FIREBASE,
+            dataBaseSearch.FIREBASE,
         ],
         projectTag: projectType.MOBILE_APP
     },
@@ -162,7 +164,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.TELEPHONE_BOOK,
         projectSkillSet: [
             programmingLanguage.JAVA,
-            dataBase.SQL_LITE,
+            otherSkill.SQL_LITE,
             otherTool.GIT,
         ],
         projectTag: projectType.MOBILE_APP
@@ -177,7 +179,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.SMASH_TAG,
         projectSkillSet: [
             programmingLanguage.SWIFT,
-            otherTool.RESTFUL_API,
+            backendArch.RESTFUL_API,
             otherSkill.CORE_DATA,
         ],
         projectTag: projectType.MOBILE_APP
@@ -193,8 +195,8 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectSkillSet: [
             programmingLanguage.SWIFT,
             programmingLanguage.PYTHON,
-            frameworkLib.FLASK,
-            dataBase.DYNAMO_DB,
+            otherSkill.FLASK,
+            dataBaseSearch.DYNAMO_DB,
         ],
         projectTag: projectType.MOBILE_APP
     },
