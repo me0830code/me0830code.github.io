@@ -4,8 +4,6 @@ import type { SkillSetItem } from "./interface/SkillSetItem";
 export const programmingLanguageInfo: SkillSectionData = {
     name: "Programming Languages",
     iconURL: "fluent:code-24-regular",
-    textColor: "text-[#278eba]",
-    backgroundColor: "text-[#278eba]",
 } as const;
 
 export const programmingLanguage: Record<string, SkillSetItem> = {
@@ -15,7 +13,7 @@ export const programmingLanguage: Record<string, SkillSetItem> = {
     PYTHON: { name: "Python", iconURL: "skill-icons:python-light", needToCustomize: false },
     C: { name: "C", iconURL: "skill-icons:c", needToCustomize: false },
     C_PLUS_PLUS: { name: "C++", iconURL: "skill-icons:cpp", needToCustomize: false },
+    C_SHARP: { name: "C#", iconURL: "skill-icons:cs", needToCustomize: false },
     SWIFT: { name: "Swift", iconURL: "skill-icons:swift", needToCustomize: false },
     SQL: { name: "SQL", iconURL: "devicon:azuresqldatabase", needToCustomize: false },
-    C_SHARP: { name: "C#", iconURL: "skill-icons:cs", needToCustomize: false },
 } as const;

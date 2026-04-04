@@ -1,5 +1,5 @@
 export const LINKS = {
-    RESUME: "https://www.google.com",
+    RESUME: "https://drive.google.com/file/d/1YiR1zjGLZHiWmmJiLIENl5HKVvbsgZ4R/view?usp=drive_link",
     PHONE: "tel:+886937532865",
     GMAIL: "mailto:me0830code@gmail.com",
     LINKEDIN: "https://www.linkedin.com/in/chien-yu-yeh",
@@ -10,7 +10,7 @@ export const LINKS = {
 } as const;
 
 export const PROJECT_LINK = {
-    COUPANG: "https://www.tw.coupang.com/",
+    COUPANG: "https://www.tw.coupang.com",
     MY_WEBSITE: "https://github.com/me0830code/me0830code.github.io",
     AE_JOB_RADAR: "https://github.com/me0830code/Demo_AEJobsRadar",
     BASEBALL_DETECTION: "https://github.com/me0830code/Demo_BaseballDetection",

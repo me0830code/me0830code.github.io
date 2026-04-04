@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
     CURRENT_TITLE: "Senior Backend Engineer",
     BRIEF_INTRO: "Currently leading **Cart and Checkout backend services** for a large-scale e-commerce system",
     DETAIL_INFO: [
-        "I'm a **Senior Software Engineer** with **7+ years** of experience across backend systems and embedded software. Currently at **Coupang**, leading backend features for the Cart & Checkout services for **16M+ daily users**. Recently delivered key growth initiatives that gained **1.2M+ new paid members** and **2K+ daily new buyers**, while maintaining high system scalability and reliability. Previously at **MediaTek**, developed SoC software for **OPPO, Apple, Google, and NVIDIA**, building a strong foundation in both high-level distributed systems and low-level optimization.",
+        "I'm a **Senior Software Engineer** with **7+ years** of experience across backend systems and embedded software. Currently at **Coupang**, leading backend features for the Cart & Checkout services for **16M+ daily active users**. Recently delivered key growth initiatives that gained **1.2M+ new paid members** and **2K+ daily new buyers**, while maintaining high system scalability and reliability. Previously at **MediaTek**, developed SoC software for **OPPO, Apple, Google, and NVIDIA**, building a strong foundation in both high-level distributed systems and low-level optimization.",
         "Outside of work, I enjoy traveling, taking photos, and spending time with animals.",
     ],
     LOCATION: "📍 Taiwan",
