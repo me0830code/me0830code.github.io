@@ -43,7 +43,6 @@ export const PROJECT_INFO: ProjectItem[] = [
             programmingLanguage.TYPE_SCRIPT,
             frontendDev.REACT,
             frontendDev.TAILWIND_CSS,
-            otherSkill.GITHUB_ACTION,
         ],
         projectTag: projectType.WEB
     },
@@ -73,10 +72,9 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectLinkURL: PROJECT_LINK.BASEBALL_DETECTION,
         projectSkillSet: [
             programmingLanguage.PYTHON,
-            infraObserve.DOCKER,
-            infraObserve.AWS,
             otherSkill.FLASK,
-            backendArch.RESTFUL_API
+            backendArch.RESTFUL_API,
+            infraObserve.AWS,
         ],
         projectTag: projectType.AI_ML
     },
