@@ -1,42 +1,42 @@
 import type { SkillItem } from "./interface/SkillItem";
 
-import { programmingLanguageInfo, programmingLanguage } from "./programmingLanguage";
-import { backendArchInfo, backendArch } from "./backendArch";
-import { frontendDevInfo, frontendDev } from "./frontendDev";
-import { dataBaseSearchInfo, dataBaseSearch } from "./dataBaseSearch";
-import { infraObserveInfo, infraObserve } from "./infraObserve";
-import { otherToolInfo, otherTool } from "./otherTool";
+import { backendEngInfo, backendEng } from "./backendEng";
+import { cloudInfraInfo, cloudInfra } from "./cloudInfra";
+import { dataObserveInfo, dataObserve } from "./dataObserve";
+import { testingQualityInfo, testingQuality } from "./testingQuality";
+import { systemToolInfo, systemTool } from "./systemTool";
+import { additionalSkillInfo, additionalSkill } from "./additionalSkill";
 
 export const MY_SKILL: SkillItem[] = [
     {
-        name: programmingLanguageInfo.name,
-        iconURL: programmingLanguageInfo.iconURL,
-        skillSetItem: programmingLanguage
+        name: backendEngInfo.name,
+        iconURL: backendEngInfo.iconURL,
+        skillSetItem: backendEng
     },
     {
-        name: backendArchInfo.name,
-        iconURL: backendArchInfo.iconURL,
-        skillSetItem: backendArch
+        name: cloudInfraInfo.name,
+        iconURL: cloudInfraInfo.iconURL,
+        skillSetItem: cloudInfra
     },
     {
-        name: frontendDevInfo.name,
-        iconURL: frontendDevInfo.iconURL,
-        skillSetItem: frontendDev
+        name: dataObserveInfo.name,
+        iconURL: dataObserveInfo.iconURL,
+        skillSetItem: dataObserve
     },
     {
-        name: dataBaseSearchInfo.name,
-        iconURL: dataBaseSearchInfo.iconURL,
-        skillSetItem: dataBaseSearch
+        name: testingQualityInfo.name,
+        iconURL: testingQualityInfo.iconURL,
+        skillSetItem: testingQuality
     },
     {
-        name: infraObserveInfo.name,
-        iconURL: infraObserveInfo.iconURL,
-        skillSetItem: infraObserve
+        name: systemToolInfo.name,
+        iconURL: systemToolInfo.iconURL,
+        skillSetItem: systemTool
     },
     {
-        name: otherToolInfo.name,
-        iconURL: otherToolInfo.iconURL,
-        skillSetItem: otherTool
+        name: additionalSkillInfo.name,
+        iconURL: additionalSkillInfo.iconURL,
+        skillSetItem: additionalSkill
     },
 ] as const;
 

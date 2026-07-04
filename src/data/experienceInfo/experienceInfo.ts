@@ -15,11 +15,11 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 jobRole: "Senior Backend Engineer",
                 jobDuration: "Jan 2025 - Present",
                 jobWorkSummary: [
-                    "- **Leading backend features** for Cart & Checkout domains, ensuring high availability and a seamless experience for **16M+ daily active users** across web and mobile platforms.",
-                    "- Delivered key growth initiatives that gained **1.2M+ new paid members** and **2K+ daily new buyers** by collaborating with frontend and mobile teams to deploy high-impact features that drove premium membership conversion.",
-                    "- Executed the end-to-end backend implementation for multiple **high-traffic campaigns (Lunar New Year, 618, and D11)**, partnering with cross-functional teams (Order, Payment, Finance) to support **320K+ concurrent users** with **zero production incidents**.",
-                    "- Engineered robust RESTful APIs with **90%+ test coverage** using Spring Boot, Spock, and Mockito, enforcing high code quality for mission-critical services.",
-                    "- Architected CI/CD pipelines and automated Kubernetes deployments via GitHub Actions, integrating Docker and SonarQube to ensure code quality while leveraging Grafana and Prometheus for proactive system monitoring and accelerating troubleshooting."
+                    "- Build and maintain backend services for the **Cart and Checkout**, supporting **16M+ daily active users** across web and mobile platforms.",
+                    "- Delivered backend features for premium membership conversion, helping drive **2.2M+ new paid members** and **2K+ daily new buyers** in partnership with frontend and mobile teams.",
+                    "- Delivered end-to-end backend implementations for high-traffic shopping events, including **Lunar New Year, 618, D11, and Christmas**, working with Order, Payment, Finance, frontend, and mobile teams to support **320K+ concurrent users** with **no production incidents.**",
+                    "- Developed RESTful APIs for Cart & Checkout services, maintaining **90%+ test coverage** with Spring Boot, Spock, and Mockito.",
+                    "- Built and improved **CI/CD workflows** with GitHub Actions, Docker, Kubernetes, and SonarQube, and used Grafana and Prometheus for production monitoring and troubleshooting."
                 ],
                 jobSkillSet: [
                     programmingLanguage.JAVA,
@@ -36,9 +36,9 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 jobRole: "Software Engineer",
                 jobDuration: "Apr 2022 - Jan 2025",
                 jobWorkSummary: [
-                    "- Optimized embedded software for the **Dynamic Voltage and Frequency Scaling (DVFS)** module across smartphone, tablet, and telematics SoCs, delivering high-performance solutions for global clients including **OPPO, Apple, Google, and NVIDIA**.",
-                    "- Engineered a **high-performance logging parser** using C++ and the Qt framework to analyze root causes via historical syndromes and incidents, **reducing debugging time by 20%+** for cross-functional module teams.",
-                    "- Architected an **automated SoC integration testing framework** using Python and Jenkins, automating image flashing and UXM equipment control via RESTful APIs to **increase equipment utilization by 30%+**."
+                    "- Optimized performance-sensitive **C software** for the Dynamic Voltage and Frequency Scaling (DVFS) module across smartphone, tablet, and telematics SoCs for global customers including **OPPO, Apple, Google, and NVIDIA.**",
+                    "- Built a **logging parser** using **C++ and Qt** to support root-cause analysis from historical logs and incidents, reducing debugging time by **20%+** for cross-functional engineering teams.",
+                    "- Built a **Python and Jenkins-based automation framework** for SoC integration testing, automating image flashing and UXM equipment control via **RESTful APIs**, increasing equipment utilization by **30%+.**"
                 ],
                 jobSkillSet: [
                     programmingLanguage.C,
@@ -55,7 +55,7 @@ export const EXPERIENCE_INFO: Record<string, ExperienceData> = {
                 jobRole: "Software and Firmware Engineer",
                 jobDuration: "Sep 2021 - Mar 2022",
                 jobWorkSummary: [
-                    "- Refined the SSD Garbage Collection (GC) module using C to enhance NAND endurance and performance stability, delivering high-reliability solutions for industry leaders including **Micron, SK Hynix, and Kioxia**.",
+                    "- Improved the SSD Garbage Collection (GC) module in **C** to enhance NAND endurance and performance stability for storage products used by **Micron, SK hynix, and Kioxia.**",
                 ],
                 jobSkillSet: [
                     programmingLanguage.C,

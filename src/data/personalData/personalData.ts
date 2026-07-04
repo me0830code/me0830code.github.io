@@ -6,9 +6,10 @@ export const PERSONAL_INFO = {
     MY_NAME: "Chien-Yu Yeh (Kevin)",
     MY_EN_NAME: "Kevin",
     CURRENT_TITLE: "Senior Backend Engineer",
-    BRIEF_INTRO: "Currently leading **Cart and Checkout backend services** for a large-scale e-commerce system.",
+    BRIEF_INTRO: "Building **Cart and Checkout backend services** across web and mobile platforms. 😎",
     DETAIL_INFO: [
-        "I'm a **Senior Software Engineer** with **7+ years** of experience across backend systems and embedded software. Currently at **Coupang**, leading backend features for the Cart & Checkout services for **16M+ daily active users**. Recently delivered key growth initiatives that gained **1.2M+ new paid members** and **2K+ daily new buyers**, while maintaining high system scalability and reliability. Previously at **MediaTek**, developed SoC software for **OPPO, Apple, Google, and NVIDIA**, building a strong foundation in both high-level distributed systems and low-level optimization.",
+        "I'm a **Senior Backend Engineer** with **7+ years** of experience across backend systems, system-level software, and engineering automation.",
+        "Currently at **Coupang** , building **Java Spring Boot** services for the **Cart and Checkout domains**, supporting **16M+ daily active users.** My recent work focuses on high-traffic e-commerce features, **RESTful APIs, automated testing, CI/CD, Kubernetes deployments, observability**, and cross-team delivery. Earlier experience in SoC software, firmware, debugging tools, and integration automation has shaped how I approach backend engineering, with a stronger focus on **reliability, performance, and root-cause analysis.**",
         "Outside of work, I enjoy traveling, taking photos, and spending time with animals.",
     ],
     LOCATION: "📍 Taiwan",
