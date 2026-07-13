@@ -50,7 +50,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "AE Job Radar",
         projectYear: "Dev in 2025",
         projectDescription: [
-            "Architected an **adapter-based job crawler** to automate visa-eligible role identification by cross-referencing SEEK software openings with the Immigration New Zealand Accredited Employer List."
+            "Built an **adapter-based daily job crawler** that automatically retrieves SEEK job listings and cross-references them with New Zealandˇs Accredited Employer List to surface opportunities at accredited employers."
         ],
         projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
         projectLinkURL: PROJECT_LINK.AE_JOB_RADAR,
@@ -66,7 +66,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "Baseball Detection",
         projectYear: "Dev in 2021",
         projectDescription: [
-            "Engineered a baseball trajectory analysis system by **training and tuning Fast-Moving-Object (FMO) detection models** and deploying scalable RESTful APIs on AWS (EC2, S3, Lambda).",
+            "Built a **baseball trajectory analysis system** by training and tuning **Fast-Moving-Object (FMO) detection models** and deploying RESTful APIs and supporting services on AWS EC2, S3, and Lambda.",
         ],
         projectPreviewImageURL: "projectPreview/Baseball_Detection.png",
         projectLinkURL: PROJECT_LINK.BASEBALL_DETECTION,
