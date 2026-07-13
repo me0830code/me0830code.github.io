@@ -50,7 +50,7 @@ export const PROJECT_INFO: ProjectItem[] = [
         projectName: "AE Job Radar",
         projectYear: "Dev in 2025",
         projectDescription: [
-            "Built an **adapter-based daily job crawler** that automatically retrieves SEEK job listings and cross-references them with New Zealandˇs Accredited Employer List to surface opportunities at accredited employers."
+            "Built an **adapter-based daily job crawler** that automatically retrieves SEEK job listings and cross-references them with New Zealand's Accredited Employer List to surface opportunities at accredited employers."
         ],
         projectPreviewImageURL: "projectPreview/AE_Job_Radar.png",
         projectLinkURL: PROJECT_LINK.AE_JOB_RADAR,
