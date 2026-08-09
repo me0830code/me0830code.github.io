@@ -1,5 +1,5 @@
 export const LINKS = {
-    RESUME: "https://drive.google.com/file/d/1tz_0bUDcB2PVtmX0-ZaYaPBZhkG5b8-U/view?usp=drive_link",
+    RESUME: "https://drive.google.com/file/d/1AX6WF7lmoTM0mYw3F8fnS2OFgSIs10H5/view?usp=sharing",
     PHONE: "tel:+886937532865",
     GMAIL: "mailto:me0830code@gmail.com",
     LINKEDIN: "https://www.linkedin.com/in/chien-yu-yeh",
