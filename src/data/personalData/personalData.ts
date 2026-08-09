@@ -8,8 +8,8 @@ export const PERSONAL_INFO = {
     CURRENT_TITLE: "Senior Backend Engineer",
     BRIEF_INTRO: "Building **Cart and Checkout backend services** across web and mobile platforms. 😎",
     DETAIL_INFO: [
-        "I'm a **Senior Backend Engineer** with **7+ years** of experience across backend systems, system-level software, and engineering automation.",
-        "Currently at **Coupang** , building **Java Spring Boot** services for the **Cart and Checkout domains**, supporting **16M+ daily active users.** My recent work focuses on high-traffic e-commerce features, **RESTful APIs, automated testing, CI/CD, Kubernetes deployments, observability**, and cross-team delivery. Earlier experience in SoC software, firmware, debugging tools, and integration automation has shaped how I approach backend engineering, with a stronger focus on **reliability, performance, and root-cause analysis.**",
+        "I'm a **Senior Backend Engineer** with **7+ years** of software engineering experience across backend systems, system-level software, and engineering automation.",
+        "Currently at **Coupang** , developing backend services in **Java with Spring Boot** and delivering multiple features for the **Cart and Checkout domains** on a large-scale e-commerce platform serving **16M+ daily active users**. Earlier experience in SoC software and SSD firmware has shaped how I approach **reliability, performance, and root-cause analysis**.",
         "Outside of work, I enjoy traveling, taking photos, and spending time with animals.",
     ],
     LOCATION: "📍 Taiwan",
